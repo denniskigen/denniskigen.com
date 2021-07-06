@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
@@ -42,10 +43,15 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
+      <nav className="sticky-nav flex justify-between items-center max-w-3xl tracking-wide text-gray-900 w-full p-8 md:px-4 lg:px-6 xl:px-2.5  my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
         <a href="#skip" className="sr-only focus:not-sr-only">
           Skip to content
         </a>
+        <h1 className="text-gray-900 dark:text-white font-medium tracking-wider transition-color hover:text-indigo-500 uppercase focus:text-indigo-500 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sky-500 focus-visible:ring-opacity-60 focus-visible:outline-none focus:outline-none rounded">
+          <Link href="/">
+            <a>DENNIS KIGEN</a>
+          </Link>
+        </h1>
         <button
           aria-label="Toggle Dark Mode"
           type="button"
