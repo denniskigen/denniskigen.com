@@ -1,1 +1,1 @@
-https://denniskigen.com
+denniskigen.com
