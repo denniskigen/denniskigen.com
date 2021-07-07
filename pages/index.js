@@ -37,13 +37,19 @@ export default function Home() {
           Projects
         </h3>
         <h4 className="prose text-gray-500 dark:text-gray-400 mb-8">
-          Some of the side projects I'm currently working on.
+          Things I've made that I'm proud of.
         </h4>
         <ProjectCard
           title="React Weather"
           description="Weather that's easy on the eyes. Get the weather forecast for any location in the world."
           href="https://react-weather.denniskigen.com/"
           icon="reactweather"
+        />
+        <ProjectCard
+          title="AMPATH Forms"
+          description="Documentation site for the AMPATH Forms solution. Build production-ready POC forms."
+          href="https://ampath-forms.vercel.app/"
+          icon="ampathforms"
         />
       </div>
     </Container>

@@ -56,10 +56,7 @@ export default function Container(props) {
           aria-label="Toggle Dark Mode"
           type="button"
           className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10"
-          onClick={() => {
-            console.log("setting theme");
-            setTheme(theme === "dark" ? "light" : "dark");
-          }}
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
           {mounted && (
             <svg
