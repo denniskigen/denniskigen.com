@@ -1,21 +1,11 @@
 import Container from "../components/Container";
+import ExternalLink from "../components/ExternalLink";
 import ProjectCard from "../components/ProjectCard";
-
-const ExternalLink = ({ href, children }) => (
-  <a
-    className="text-gray-500 hover:text-gray-600 transition"
-    target="_blank"
-    rel="noopener noreferrer"
-    href={href}
-  >
-    {children}
-  </a>
-);
 
 export default function Home() {
   return (
     <Container>
-      <div className="flex flex-col flex-grow justify-center items-start max-w-3xl mx-auto mb-auto">
+      <div className="flex flex-col flex-grow justify-center items-start mb-auto">
         <h3 className="font-bold text-xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           Hey there, I'm Dennis.
         </h3>
@@ -40,9 +30,9 @@ export default function Home() {
           Things I've made that I'm proud of.
         </h4>
         <ProjectCard
-          title="React Weather"
+          title="React Weather Next"
           description="Weather that's easy on the eyes. Get the weather forecast for any location in the world."
-          href="https://react-weather.denniskigen.com/"
+          href="https://react-weather-next.denniskigen.com/"
           icon="reactweather"
         />
         <ProjectCard

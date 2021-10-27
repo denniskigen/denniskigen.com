@@ -1,16 +1,12 @@
+import ExternalLink from "./ExternalLink";
+
 export default function ProjectCard({ title, description, href, icon }) {
   return (
-    <a
-      className="mb-4 hover:shadow"
-      href={href}
-      aria-label={title}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="flex items-center border border-gray-200 dark:border-gray-800 rounded p-4">
+    <ExternalLink href={href} styles="mb-4 hover:shadow">
+      <div className="flex items-center border hover:border-0 border-gray-200 dark:border-gray-800 rounded p-4">
         {icon == "reactweather" && (
           <div className="h-8 w-8 ml-2 mr-4">
-            <span className="sr-only">React Weather</span>
+            <span className="sr-only">React Weather Next</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -48,6 +44,6 @@ export default function ProjectCard({ title, description, href, icon }) {
           </p>
         </div>
       </div>
-    </a>
+    </ExternalLink>
   );
 }
