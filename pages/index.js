@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex flex-col flex-grow justify-center items-start">
         <div className="space-y-4">
           <h3 className="font-bold text-xl lg:text-5xl tracking-tight my-6 text-black dark:text-white">
-            Hey there, I'm Dennis.
+            Hey there 👋, I'm Dennis.
           </h3>
           <p className="prose text-gray-600 dark:text-gray-400">
             I'm a UI engineer, writer and maker of cool things.
@@ -29,7 +29,7 @@ export default function Home() {
           </p>
           <p className="prose text-gray-600 dark:text-gray-400">
             Welcome to my digital garden where I'll be sharing what I build as I
-            learn in public. Thanks for swinging by! 👋
+            learn in public. Thanks for swinging by!
           </p>
           <p className="prose text-gray-600 dark:text-gray-400">
             Curious about how I work? Check out my{" "}
@@ -41,9 +41,9 @@ export default function Home() {
           <h3 className="font-bold text-xl lg:text-3xl tracking-tight my-6 mt-8 text-black dark:text-white">
             Projects
           </h3>
-          <h4 className="prose text-gray-600 dark:text-gray-400 mb-8">
+          <p className="prose text-gray-600 dark:text-gray-400 mb-8">
             Things I've made that I'm proud of.
-          </h4>
+          </p>
           <div className="flex flex-col">
             <ProjectCard
               title="React Weather"

@@ -16,7 +16,7 @@ export default function Uses() {
           rewarded in some way if you use them to purchase, but rest assured
           these are all tools and services I actually use.
         </p>
-        <div className="mt-6 space-y-10 text-gray-700 ">
+        <div className="mt-6 space-y-10 text-gray-700">
           <div>
             <h2 className="text-xl text-black font-bold dark:text-white">
               Workstation

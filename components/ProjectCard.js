@@ -3,7 +3,7 @@ import ExternalLink from "./ExternalLink";
 export default function ProjectCard({ title, description, href, icon }) {
   return (
     <ExternalLink href={href} styles="mb-4 hover:shadow">
-      <div className="flex items-center border hover:border-0 border-gray-200 dark:border-gray-800 rounded p-4">
+      <div className="flex items-center border hover:border-2 border-gray-200 dark:border-gray-200 dark:hover:border-2 rounded p-4">
         {icon == "reactweather" && (
           <div className="h-8 w-8 ml-2 mr-4">
             <span className="sr-only">React Weather Next</span>
@@ -35,11 +35,11 @@ export default function ProjectCard({ title, description, href, icon }) {
             </svg>
           </div>
         )}
-        <div>
-          <h4 className="text-lg font-bold tracking-tight text-gray-700 dark:text-white">
+        <div className="space-y-1">
+          <h4 className="font-semibold tracking-tight text-gray-700 dark:text-white">
             {title}
           </h4>
-          <p className="leading-5 text-gray-600 dark:text-gray-400">
+          <p className="prose leading-5 text-gray-600 dark:text-gray-400">
             {description}
           </p>
         </div>
