@@ -104,7 +104,13 @@ export default function Uses() {
                 <p>
                   I love the integrated terminal and the incredible power you
                   can unlock with extensions. You can find all my VS Code
-                  settings here.
+                  settings{" "}
+                  <ExternalLink
+                    href="https://gist.github.com/denniskigen/ff67d014e8f7150bf5de4df5518ef696"
+                    styles="text-blue-500 dark:text-gray-300"
+                  >
+                    here.
+                  </ExternalLink>
                 </p>
               </li>
               <li className="space-y-2">
@@ -255,7 +261,7 @@ export default function Uses() {
                 <p>
                   Phenomenal developer experience. I was blown away the first
                   time I tried Zeit out and they've been knocking it out of the
-                  park ever since.
+                  park ever since.{" "}
                   <ExternalLink
                     href="https://nextjs.org/"
                     styles="text-blue-500 dark:text-gray-300"
