@@ -36,7 +36,7 @@ export default function ProjectCard({ title, description, href, icon }) {
           </div>
         )}
         <div className="space-y-1">
-          <h4 className="font-semibold tracking-tight text-gray-700 dark:text-white">
+          <h4 className="font-semibold tracking-tight text-gray-700 dark:text-white hover:underline">
             {title}
           </h4>
           <p className="prose leading-5 text-gray-600 dark:text-gray-400">
