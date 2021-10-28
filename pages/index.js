@@ -33,8 +33,8 @@ export default function Home() {
           </p>
           <p className="prose text-gray-600 dark:text-gray-400">
             Curious about how I work? Check out my{" "}
-            <NextLink href="/uses">uses</NextLink> for a full list of all the
-            software, hardware and services I use every day.
+            <NextLink href="/uses">uses</NextLink> page for a full list of all
+            the software, hardware and services I use every day.
           </p>
         </div>
         <div className="space-y-4">
