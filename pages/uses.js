@@ -19,7 +19,7 @@ export default function Uses() {
         <div className="mt-6 space-y-10 text-gray-700">
           <div>
             <h2 className="text-xl text-black font-bold dark:text-white">
-              Workstation
+              Hardware
             </h2>
             <ul className="mt-4 space-y-6 pl-5 list-disc dark:text-gray-400">
               <li className="space-y-2">
@@ -83,6 +83,20 @@ export default function Uses() {
                 <p>
                   I use my laptop in clamshell mode so a mouse is essential.
                   This does the job reasonably well enough.
+                </p>
+              </li>
+              <li className="space-y-2">
+                <p className="font-medium">
+                  <ExternalLink
+                    href="https://www.amazon.com/gp/product/B07H2DBFQZ/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=denniskigen-20&creative=9325&linkCode=as2&creativeASIN=B07H2DBFQZ&linkId=004d2fdee5b27c381a6ab039a2ed4e63"
+                    styles="underline text-black dark:text-gray-300"
+                  >
+                    Sony WH-1000XM3 Noise Cancelling Headphones
+                  </ExternalLink>
+                </p>
+                <p>
+                  Comfortable, crisp-sounding and incredibly adept at
+                  noise-cancelling. One of my all time best purchases.
                 </p>
               </li>
             </ul>
