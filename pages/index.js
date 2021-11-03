@@ -1,3 +1,4 @@
+import Image from "next/image";
 import NextLink from "next/link";
 import Container from "../components/Container";
 import ExternalLink from "../components/ExternalLink";
@@ -12,11 +13,11 @@ export default function Home() {
             Hey there 👋, I'm Dennis.
           </h3>
           <p className="prose text-gray-600 dark:text-gray-400">
-            I'm a UI engineer, writer and maker of cool things.
-          </p>
-          <p className="prose text-gray-600 dark:text-gray-400">
-            I enjoy building interfaces that are fast, beautiful and delightful
-            to use.
+            I'm a UI engineer, writer and{" "}
+            <ExternalLink href="https://github.com/denniskigen">
+              maker of cool things
+            </ExternalLink>
+            .
           </p>
           <p className="prose text-gray-600 dark:text-gray-400">
             I'm currently shipping open source healthcare software for the
@@ -26,6 +27,10 @@ export default function Home() {
             </ExternalLink>{" "}
             and <ExternalLink href="https://openmrs.org/">OpenMRS</ExternalLink>
             .
+          </p>
+          <p className="prose text-gray-600 dark:text-gray-400">
+            I enjoy building interfaces that are fast, beautiful and delightful
+            to use.
           </p>
           <p className="prose text-gray-600 dark:text-gray-400">
             Welcome to my digital garden where I'll be sharing what I build as I
