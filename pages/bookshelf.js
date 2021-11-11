@@ -29,6 +29,15 @@ export default function BookShelf() {
             </li>
             <li className="space-y-2">
               <ExternalLink
+                href="https://amzn.to/3C78HyH"
+                styles="font-bold underline text-black dark:text-gray-300"
+              >
+                Starting Strength
+              </ExternalLink>{" "}
+              by Mark Rippetoe
+            </li>
+            <li className="space-y-2">
+              <ExternalLink
                 href="https://www.amazon.com/gp/product/0804139296/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0804139296&linkCode=as2&tag=denniskigen-20&linkId=cd7315b6f19fe3b724c063b163ce4928"
                 styles="font-bold underline text-black dark:text-gray-300"
               >
