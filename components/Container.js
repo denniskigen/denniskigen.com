@@ -65,7 +65,9 @@ export default function Container(props) {
       <div className="flex flex-col justify-center px-8 max-w-3xl mx-auto">
         <nav className="flex items-center justify-between w-full relative border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 text-gray-900 bg-opacity-60 dark:text-gray-100">
           <span className="hidden sm:inline-block font-bold tracking-wider uppercase">
-            Dennis Kigen
+            <NextLink href="/">
+              <a>Dennis Kigen</a>
+            </NextLink>
           </span>
           <div className="ml-[-0.60rem] space-x-2">
             <NavItem href="/" text="Home" />
