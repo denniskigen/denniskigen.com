@@ -8,15 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.0",
+    "@tailwindcss/typography": "^0.5.1",
+    "esbuild": "^0.14.18",
+    "mdx-bundler": "^8.0.1",
     "next": "latest",
     "next-themes": "^0.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.7"
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.5",
+    "tailwindcss": "^3.0.18"
   }
 }

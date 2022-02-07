@@ -13,9 +13,9 @@ function NavItem({ href, text }) {
       <a
         className={`${
           isActive
-            ? "font-semibold text-gray-800 dark:text-gray-200 bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-900 dark:hover:text-gray-400"
-            : "font-normal text-gray-600 dark:text-gray-400"
-        } inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all`}
+            ? "bg-gray-200 font-semibold text-slate-800 dark:bg-gray-900 dark:text-slate-200 dark:hover:bg-gray-900 dark:hover:text-slate-400"
+            : "font-normal text-slate-600 dark:text-slate-400"
+        } inline-block rounded-lg p-1 transition-all hover:bg-gray-200 dark:hover:bg-gray-800 sm:px-3 sm:py-2`}
       >
         <span className="capsize">{text}</span>
       </a>
@@ -40,7 +40,7 @@ export default function Container(props) {
   };
 
   return (
-    <div className="bg-white dark:bg-black min-h-screen">
+    <div className="min-h-screen bg-white dark:bg-black">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -62,9 +62,9 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <div className="flex flex-col justify-center px-8 max-w-3xl mx-auto">
-        <nav className="flex items-center justify-between w-full relative border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 text-gray-900 bg-opacity-60 dark:text-gray-100">
-          <span className="hidden sm:inline-block font-bold tracking-wider uppercase">
+      <div className="mx-auto flex max-w-3xl flex-col justify-center px-8">
+        <nav className="relative mx-auto flex w-full items-center justify-between border-gray-200 bg-opacity-60 pt-8 pb-8 text-slate-900 dark:border-gray-700 dark:text-slate-100 sm:pb-16">
+          <span className="hidden font-bold uppercase tracking-wider sm:inline-block">
             <NextLink href="/">
               <a>Dennis Kigen</a>
             </NextLink>
@@ -77,7 +77,7 @@ export default function Container(props) {
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10 flex flex-row items-center justify-center"
+            className="flex h-10 w-10 flex-row items-center justify-center rounded bg-gray-200 p-3 dark:bg-gray-800"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {mounted && (
@@ -86,7 +86,7 @@ export default function Container(props) {
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 stroke="currentColor"
-                className="h-4 w-4 text-gray-800 dark:text-gray-200"
+                className="h-4 w-4 text-slate-800 dark:text-slate-200"
               >
                 {theme === "dark" ? (
                   <path
@@ -108,7 +108,7 @@ export default function Container(props) {
           </button>
         </nav>
       </div>
-      <main className="flex flex-col max-w-3xl mx-auto justify-center bg-white dark:bg-black px-8">
+      <main className="mx-auto flex max-w-3xl flex-col justify-center bg-white px-8 dark:bg-black">
         {children}
       </main>
     </div>

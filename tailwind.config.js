@@ -10,7 +10,7 @@ module.exports = {
         "blue-opaque": "rgb(13 42 148 / 18%)",
       },
       fontFamily: {
-        sans: ["Inter", ...fontFamily.sans],
+        sans: ["Inter var", ...fontFamily.sans],
       },
       typography: (theme) => ({
         DEFAULT: {
