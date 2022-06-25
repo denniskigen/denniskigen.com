@@ -78,7 +78,8 @@ export default function Home() {
             JavaScript, HTML and CSS. Betting my future on React and Next.js for
             user interfaces. Setting my stall out on Tailwind and TypeScript.
             Experimenting with Vite for tooling and Zustand for state
-            management. Curious about Svelte and Prisma.
+            management. Loving Nextra for documentation and SWR for data
+            fetching. Curious about Svelte and Prisma.
           </p>
           <p className="mt-8">
             Enjoying Chillhop when working, and Afrobeats whenever else. Reading
