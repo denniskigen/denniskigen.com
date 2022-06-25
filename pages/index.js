@@ -15,7 +15,7 @@ export default function Home() {
             and scale my craft.
           </p>
           <p className="mt-8">
-            I'm currently doing frontend at{" "}
+            I'm currently doing frontend development at{" "}
             <ExternalLink href="https://www.ampathkenya.org/">
               AMPATH
             </ExternalLink>{" "}
@@ -61,7 +61,7 @@ export default function Home() {
                 class="color333 svgShape"
               ></path>
             </svg>
-            to help build open-source medical records software for the
+            - building the future of electronic medical records software for the
             developing world.
           </p>
           <p className="mt-8"></p>
