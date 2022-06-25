@@ -126,8 +126,8 @@ export default function Home() {
           <p className="mt-8">If you're in Eldoret, let's go for a walk.</p>
           <p className="mt-8">
             Catch me on Twitter @
-            <ExternalLink href="https://twitter.com/denniskigen">
-              denniskigen
+            <ExternalLink href="https://twitter.com/dennisforthewin">
+              dennisforthewin
             </ExternalLink>
             .
           </p>
