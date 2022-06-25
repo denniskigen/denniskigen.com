@@ -9,7 +9,7 @@ export default function Home() {
           <h3 className="font-semibold mb-6 text-lg">Dennis Kigen</h3>
           <h1 className="font-semibold">About me</h1>
           <p className="mt-8">
-            I'm a Frontend Engineer based in Eldoret. I'm interested in
+            I'm a Frontend Software Engineer based in Eldoret. I'm interested in
             designing and building polished interfaces, user/dev experience and
             documentation. I'm open to opportunities that would allow me to grow
             and scale my craft.
