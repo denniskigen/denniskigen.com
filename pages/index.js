@@ -95,7 +95,7 @@ export default function Home() {
                 Building the new frontend for OpenMRS.
               </p>
             </div>
-            <div className="mt-4 space-y-2 flex-1">
+            <div className="mt-4 hidden md:block space-y-2 flex-1">
               <h3 className="font-medium">
                 <ExternalLink href=" https://react-weather.denniskigen.com">
                   React Weather
