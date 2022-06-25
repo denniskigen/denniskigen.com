@@ -63,7 +63,7 @@ export default function Container(props) {
         )}
       </Head>
 
-      <main className="mx-auto flex max-w-3xl flex-col justify-center bg-white px-8 py-24 lg:py-32">
+      <main className="mx-auto flex max-w-3xl flex-col justify-center bg-white px-8 py-24 lg:py-36">
         {children}
       </main>
     </div>

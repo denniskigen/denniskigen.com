@@ -72,6 +72,40 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-12">
+          <h2 className="font-semibold">Building</h2>
+          <section className="mt-4 flex space-x-10">
+            <div className="mt-4 space-y-2 flex-1">
+              <h3 className="font-medium">
+                <ExternalLink href="https://ampath-forms.vercel.app">
+                  AMPATH Forms
+                </ExternalLink>
+              </h3>
+              <p className="text-slate-600">
+                Documenting how to build, test and validate OpenMRS form
+                schemas.
+              </p>
+            </div>
+            <div className="mt-4 space-y-2 flex-1">
+              <h3 className="font-medium">
+                <ExternalLink href=" https://github.com/openmrs/openmrs-esm-patient-chart">
+                  OpenMRS 3.x
+                </ExternalLink>
+              </h3>
+              <p className="text-slate-600">
+                Building the new frontend for OpenMRS.
+              </p>
+            </div>
+            <div className="mt-4 space-y-2 flex-1">
+              <h3 className="font-medium">
+                <ExternalLink href=" https://react-weather.denniskigen.com">
+                  React Weather
+                </ExternalLink>
+              </h3>
+              <p className="text-slate-600">Weather that's easy on the eyes.</p>
+            </div>
+          </section>
+        </div>
+        <div className="mt-12">
           <h1 className="font-semibold">Now</h1>
           <p className="mt-8">
             Building polished software for the web using modern features in
