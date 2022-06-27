@@ -6,13 +6,17 @@ export default function Home() {
     <Container>
       <div className="flex flex-grow flex-col items-start justify-center leading-[24px] text-[16.5px]">
         <div>
-          <h3 className="font-semibold mb-6 text-lg">Dennis Kigen</h3>
+          <h3 className="font-semibold text-lg">Dennis Kigen</h3>
+          <p className="mb-20 text-slate-500">
+            <span>Frontend Software Engineer</span>
+            <br />
+            <span>Eldoret, Kenya</span>
+          </p>
           <h1 className="font-semibold">About me</h1>
           <p className="mt-8">
-            I'm a Frontend Software Engineer based in Eldoret. I'm interested in
-            designing and building polished interfaces, user/dev experience and
-            documentation. I'm open to opportunities that would allow me to grow
-            and scale my craft.
+            I'm interested in designing and building polished interfaces,
+            user/dev experience and documentation. I'm open to opportunities
+            that would allow me to grow and scale my craft.
           </p>
           <p className="mt-8">
             I'm currently doing frontend development at{" "}
@@ -124,36 +128,29 @@ export default function Home() {
         <div className="mt-12">
           <h1 className="font-semibold">Connect</h1>
           <p className="mt-8">If you're in Eldoret, let's go for a walk.</p>
-          <p className="mt-8">
-            Catch me on Twitter @
-            <ExternalLink href="https://twitter.com/dennisforthewin">
-              dennisforthewin
-            </ExternalLink>
-            .
+          <p className="mt-8 max-w-sm">
+            <div className="grid grid-cols-2 items-baseline mb-2 space-y-3">
+              <div className="text-slate-600 font-medium">Email</div>
+              <div className="">
+                <ExternalLink href="mailto:kigen.work@gmail.com">
+                  kigen.work@gmail.com
+                </ExternalLink>
+              </div>
+              <div className="text-slate-600 font-medium">Twitter</div>
+              <div className="">
+                <ExternalLink href="https://twitter.com/dennisforthewin">
+                  dennisforthewin
+                </ExternalLink>
+              </div>
+              <div className="text-slate-600 font-medium">LinkedIn</div>
+              <div className="">
+                <ExternalLink href="https://www.linkedin.com/in/denniskigen/">
+                  denniskigen
+                </ExternalLink>
+              </div>
+            </div>
           </p>
         </div>
-        {/* <div className="space-y-4">
-          <h3 className="my-6 mt-8 text-xl font-bold tracking-tight text-black dark:text-white lg:text-3xl">
-            Projects
-          </h3>
-          <p className="prose mb-8 text-slate-600">
-            Things I've made that I'm proud of.
-          </p>
-          <div className="flex flex-col">
-            <ProjectCard
-              title="React Weather"
-              description="Weather that's easy on the eyes. Get the weather forecast for any location in the world."
-              href="https://react-weather-next.denniskigen.com/"
-              icon="reactweather"
-            />
-            <ProjectCard
-              title="AMPATH Forms"
-              description="Documentation site for the AMPATH Forms solution. Build production-ready POC forms."
-              href="https://ampath-forms.vercel.app/"
-              icon="ampathforms"
-            />
-          </div>
-        </div> */}
       </div>
     </Container>
   );
