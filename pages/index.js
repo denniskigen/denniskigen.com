@@ -7,12 +7,12 @@ export default function Home() {
       <div className="flex flex-grow flex-col items-start justify-center leading-[24px] text-[16.5px]">
         <div>
           <h3 className="font-medium">Dennis Kigen</h3>
-          <p className="mb-20 text-slate-500">
+          <p className="mb-28 text-slate-500">
             <span>Frontend Software Engineer</span>
             <br />
             <span>Eldoret, Kenya</span>
           </p>
-          <h1 className="font-medium">About me</h1>
+          <h1 className="font-medium">About</h1>
           <p className="mt-8">
             I'm interested in designing and building polished interfaces,
             user/dev experience and documentation. I'm open to opportunities
