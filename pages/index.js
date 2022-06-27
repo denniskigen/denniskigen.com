@@ -6,13 +6,13 @@ export default function Home() {
     <Container>
       <div className="flex flex-grow flex-col items-start justify-center leading-[24px] text-[16.5px]">
         <div>
-          <h3 className="font-semibold text-lg">Dennis Kigen</h3>
+          <h3 className="font-medium">Dennis Kigen</h3>
           <p className="mb-20 text-slate-500">
             <span>Frontend Software Engineer</span>
             <br />
             <span>Eldoret, Kenya</span>
           </p>
-          <h1 className="font-semibold">About me</h1>
+          <h1 className="font-medium">About me</h1>
           <p className="mt-8">
             I'm interested in designing and building polished interfaces,
             user/dev experience and documentation. I'm open to opportunities
@@ -76,7 +76,7 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-12">
-          <h2 className="font-semibold">Building</h2>
+          <h2 className="font-medium">Building</h2>
           <section className="mt-4 flex space-x-10">
             <div className="mt-4 space-y-2 flex-1">
               <h3 className="font-medium">
@@ -110,7 +110,7 @@ export default function Home() {
           </section>
         </div>
         <div className="mt-12">
-          <h1 className="font-semibold">Now</h1>
+          <h1 className="font-medium">Now</h1>
           <p className="mt-8">
             Building polished software for the web using modern features in
             JavaScript, HTML and CSS. Betting my future on React and Next.js for
@@ -126,7 +126,7 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-12">
-          <h1 className="font-semibold">Connect</h1>
+          <h1 className="font-medium">Connect</h1>
           <p className="mt-8">If you're in Eldoret, let's go for a walk.</p>
           <p className="mt-8 max-w-sm">
             <div className="grid grid-cols-2 items-baseline mb-2 space-y-3">
