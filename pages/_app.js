@@ -1,4 +1,3 @@
-import "../styles.css";
 import "tailwindcss/tailwind.css";
 import { ThemeProvider } from "next-themes";
 
