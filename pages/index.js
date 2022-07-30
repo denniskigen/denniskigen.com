@@ -4,25 +4,13 @@ import ExternalLink from "../components/ExternalLink";
 export default function Home() {
   return (
     <Container>
-      <div className="flex flex-grow flex-col items-start justify-center leading-[24px] text-[16.5px]">
+      <main className="flex flex-grow flex-col items-start justify-center text-very-grey leading-7 dark:text-very-light antialiased">
         <div>
-          <h3 className="font-medium">Dennis Kigen</h3>
-          <p className="mb-28 text-slate-500">
-            <span>Frontend Software Engineer</span>
-            <br />
-            <span>Eldoret, Kenya</span>
-          </p>
-          <h1 className="font-medium">About</h1>
+          <h1 className="leading-7 font-medium">Dennis Kigen</h1>
           <p className="mt-8">
-            I'm interested in designing and building polished interfaces,
-            user/dev experience and documentation. I'm open to opportunities
-            that would allow me to grow and scale my craft.
-          </p>
-          <p className="mt-8">
-            I'm currently doing frontend development at{" "}
-            <ExternalLink href="https://www.ampathkenya.org/">
-              AMPATH
-            </ExternalLink>{" "}
+            I'm a Frontend Engineer living in Eldoret, Kenya. I'm currently
+            building the future of electronic medical records software for the
+            developing world at{" "}
             <svg
               className="mx-1 inline-flex mb-1"
               width="20"
@@ -48,7 +36,10 @@ export default function Home() {
                 fill="#0055a5"
               />
             </svg>
-            and <ExternalLink href="https://openmrs.org/">OpenMRS</ExternalLink>
+            <ExternalLink href="https://www.ampathkenya.org/">
+              AMPATH
+            </ExternalLink>{" "}
+            and
             <svg
               className="mx-1 inline-flex mb-1"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,64 +50,124 @@ export default function Home() {
             >
               <path
                 fill="#333333"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M24.0117 12.3538C20.792 12.3538 17.8772 13.6587 15.7684 15.7675L15.7593 8.08049C18.228 6.80848 21.0437 6 24.0117 6C26.9781 6 29.7788 6.71777 32.2463 7.98895L32.238 15.7517C30.1304 13.6524 27.2228 12.3538 24.0117 12.3538ZM23.9955 35.6463C27.2149 35.6463 30.1284 34.3419 32.2372 32.2327L32.2313 40.0108C29.7639 41.2824 26.9635 42.0001 23.9955 42.0001C21.0275 42.0001 18.228 41.2824 15.7593 40.0112L15.7676 32.2485C17.8764 34.3481 20.7841 35.6463 23.9955 35.6463ZM15.7671 32.2333C13.6583 30.1245 12.3534 27.2114 12.3534 23.9917C12.3534 20.7802 13.652 17.873 15.7517 15.7638L7.98853 15.7559C6.71777 18.2241 6 21.0237 6 23.9917C6 26.9593 6.71777 29.76 7.98936 32.2283L15.7671 32.2333ZM35.6466 23.9992C35.6466 20.7794 34.3421 17.8646 32.2329 15.7559L40.011 15.7617C41.2826 18.2304 42.0004 21.0311 42.0004 23.9992C42.0004 26.9655 41.2826 29.7663 40.0114 32.2337L32.2483 32.2254C34.3483 30.1183 35.6466 27.2102 35.6466 23.9992Z"
-                clip-rule="evenodd"
-                class="color333 svgShape"
+                clipRule="evenodd"
               ></path>
             </svg>
-            - building the future of electronic medical records software for the
-            developing world.
+            <ExternalLink href="https://openmrs.org/">OpenMRS</ExternalLink>.
           </p>
-          <p className="mt-8"></p>
           <p className="mt-8">
-            Focused on <em>learning</em> and <em>building</em>. Mindful of my
-            time and attention so that I can produce quality work and feel
-            productive.
+            I'm interested in designing and building polished interfaces, UX/DX
+            and documentation. I'm open to opportunities that would allow me to
+            grow and scale my craft.
           </p>
         </div>
         <div className="mt-12">
-          <h2 className="font-medium">Building</h2>
+          <h2 className="font-medium text-neutral-600 dark:text-neutral-400">
+            Projects
+          </h2>
           <section className="mt-4 flex space-x-10">
             <div className="mt-4 space-y-2 flex-1">
-              <h3 className="font-medium">
+              <h3>
                 <ExternalLink href="https://ampath-forms.vercel.app">
-                  AMPATH Forms
+                  <span className="flex items-center">
+                    AMPATH Forms{" "}
+                    <svg
+                      className="ml-1 w-5 h-5 text-neutral-400 dark:text-neutral-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
                 </ExternalLink>
               </h3>
-              <p className="text-slate-600">
+              <p className="text-neutral-600 dark:text-neutral-400">
                 Documenting how to build, test and validate OpenMRS form
                 schemas.
               </p>
             </div>
             <div className="mt-4 space-y-2 flex-1">
-              <h3 className="font-medium">
+              <h3>
                 <ExternalLink href=" https://github.com/openmrs/openmrs-esm-patient-chart">
-                  OpenMRS 3.x
+                  <span className="flex items-center">
+                    OpenMRS 3.x{" "}
+                    <svg
+                      className="ml-1 w-5 h-5 text-neutral-400 dark:text-neutral-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
                 </ExternalLink>
               </h3>
-              <p className="text-slate-600">
-                Building the new frontend for OpenMRS.
+              <p className="text-neutral-600 dark:text-neutral-400">
+                Building the new frontend for the world's most popular
+                open-source EMR.
               </p>
             </div>
             <div className="mt-4 hidden md:block space-y-2 flex-1">
-              <h3 className="font-medium">
+              <h3>
                 <ExternalLink href=" https://react-weather.denniskigen.com">
-                  React Weather
+                  <span className="flex items-center">
+                    React Weather{" "}
+                    <svg
+                      className="ml-1 w-5 h-5 text-neutral-400 dark:text-neutral-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
                 </ExternalLink>
               </h3>
-              <p className="text-slate-600">Weather that's easy on the eyes.</p>
+              <p className="text-neutral-600 dark:text-neutral-400">
+                Weather that's easy on the eyes.
+              </p>
             </div>
           </section>
         </div>
         <div className="mt-12">
-          <h1 className="font-medium">Now</h1>
+          <h1 className="font-medium text-neutral-600 dark:text-neutral-400">
+            Now
+          </h1>
           <p className="mt-8">
-            Building polished software for the web using modern features in
-            JavaScript, HTML and CSS. Betting my future on React and Next.js for
-            user interfaces. Setting my stall out on Tailwind and TypeScript.
-            Experimenting with Vite for tooling and Zustand for state
-            management. Loving Nextra for documentation and SWR for data
+            Focused on <em>learning</em> and <em>building</em>. Mindful of my
+            time and attention so that I can produce quality work and feel
+            productive.
+          </p>
+          <p className="mt-8">
+            Building fast, polished software for the web using modern features
+            in JavaScript, HTML and CSS. Betting my future on React and Next.js
+            for user interfaces. Setting my stall out on Tailwind and
+            TypeScript. Experimenting with Vite for tooling and Zustand for
+            state management. Loving Nextra for documentation and SWR for data
             fetching. Curious about Svelte and Prisma.
           </p>
           <p className="mt-8">
@@ -126,32 +177,21 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-12">
-          <h1 className="font-medium">Connect</h1>
-          <p className="mt-8">If you're in Eldoret, let's go for a walk.</p>
-          <p className="mt-8 max-w-sm">
-            <div className="grid grid-cols-2 items-baseline mb-2 space-y-3">
-              <div className="text-slate-600 font-medium">Email</div>
-              <div className="">
-                <ExternalLink href="mailto:kigen.work@gmail.com">
-                  kigen.work@gmail.com
-                </ExternalLink>
-              </div>
-              <div className="text-slate-600 font-medium">Twitter</div>
-              <div className="">
-                <ExternalLink href="https://twitter.com/dennisforthewin">
-                  dennisforthewin
-                </ExternalLink>
-              </div>
-              <div className="text-slate-600 font-medium">LinkedIn</div>
-              <div className="">
-                <ExternalLink href="https://www.linkedin.com/in/denniskigen/">
-                  denniskigen
-                </ExternalLink>
-              </div>
-            </div>
+          <h1 className="font-medium text-neutral-600 dark:text-neutral-400">
+            Connect
+          </h1>
+          <p className="mt-8">
+            If you're in Eldoret, let's go for a walk. Reach me at{" "}
+            <ExternalLink href="https://twitter.com/dennisforthewin">
+              @dennisforthewin
+            </ExternalLink>{" "}
+            or{" "}
+            <ExternalLink href="mailto:kigen.work@gmail.com">
+              kigen.work@gmail.com
+            </ExternalLink>
           </p>
         </div>
-      </div>
+      </main>
     </Container>
   );
 }

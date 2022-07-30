@@ -1,46 +1,19 @@
 import Head from "next/head";
-import NextLink from "next/link";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
-// import { useTheme } from "next-themes";
-
-function NavItem({ href, text }) {
-  const router = useRouter();
-  const isActive = router.asPath === href;
-
-  return (
-    <NextLink href={href}>
-      <a
-        className={`${
-          isActive
-            ? "bg-gray-200 font-semibold text-slate-800 dark:bg-gray-700 dark:text-slate-200 dark:hover:bg-gray-900 dark:hover:text-slate-400"
-            : "font-normal text-slate-600 dark:text-slate-400"
-        } inline-block rounded-lg p-1 transition-all hover:bg-gray-200 dark:hover:bg-gray-800 sm:px-3 sm:py-2`}
-      >
-        <span className="capsize">{text}</span>
-      </a>
-    </NextLink>
-  );
-}
+import Navbar from "./Navbar";
 
 export default function Container(props) {
-  const [mounted, setMounted] = useState(false);
-  // const { theme, setTheme } = useTheme();
-
-  // After mounting, we have access to the theme
-  useEffect(() => setMounted(true), []);
-
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
     title: "Dennis Kigen",
-    description: `Software Engineer, JavaScript enthusiast, nerd.`,
+    description: `Frontend Engineer, JavaScript enthusiast, nerd.`,
     type: "website",
     ...customMeta,
   };
 
   return (
-    <div className="min-h-screen max-w-3xl mx-auto bg-white">
+    <div className="min-h-screen mx-auto dark:bg-subtle-dark">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -62,8 +35,8 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-
-      <main className="mx-auto flex max-w-3xl flex-col justify-center bg-white px-8 py-10 lg:py-36">
+      <Navbar />
+      <main className="mx-auto flex max-w-3xl flex-col justify-center px-8 py-16">
         {children}
       </main>
     </div>
