@@ -98,7 +98,7 @@ export default function Home() {
             </div>
             <div className="mt-4 space-y-2 flex-1">
               <h3>
-                <ExternalLink href=" https://github.com/openmrs/openmrs-esm-patient-chart">
+                <ExternalLink href="https://dev3.openmrs.org/openmrs/spa">
                   <span className="flex items-center">
                     OpenMRS 3.x{" "}
                     <svg
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             <div className="mt-4 hidden md:block space-y-2 flex-1">
               <h3>
-                <ExternalLink href=" https://react-weather.denniskigen.com">
+                <ExternalLink href="https://react-weather.denniskigen.com">
                   <span className="flex items-center">
                     React Weather{" "}
                     <svg
