@@ -4,30 +4,25 @@ import ExternalLink from "../components/ExternalLink";
 export default function Uses() {
   return (
     <Container title="Dennis Kigen - Uses">
-      <article className="mb-16 flex w-full flex-col items-start justify-center dark:text-white">
-        <h1 className="mb-4 text-2xl font-bold tracking-tight text-black dark:text-white md:text-3xl">
-          My Gear
-        </h1>
-        <p className="mb-6 text-slate-700 dark:text-slate-300">
+      <article className="flex w-full flex-col items-start justify-center">
+        <h1 className="font-medium">Uses</h1>
+        <p className="mt-8">
           This page covers the different tools I use for my work.
         </p>
-        <p className="mb-6 text-slate-700 dark:text-slate-300">
+        <p className="mt-8">
           A few of the links below are affiliate links which means I get paid or
           rewarded in some way if you use them to purchase, but rest assured
           these are all tools and services I actually use.
         </p>
-        <div className="mt-6 space-y-10 text-slate-700">
+        <div className="mt-8 space-y-10">
           <div>
-            <h2 className="text-xl font-bold text-black dark:text-white">
+            <h2 className="font-medium text-neutral-600 dark:text-neutral-400">
               Hardware
             </h2>
-            <ul className="mt-4 list-disc space-y-6 pl-5 dark:text-slate-400">
+            <ul className="mt-4 list-none space-y-6">
               <li className="space-y-2">
                 <p className="font-medium leading-normal">
-                  <ExternalLink
-                    href="https://www.amazon.com/gp/product/B083Z22L3H/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B083Z22L3H&linkCode=as2&tag=denniskigen-20&linkId=ed7232d0baed4a85880d157f0fb49cbc"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.amazon.com/gp/product/B083Z22L3H/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B083Z22L3H&linkCode=as2&tag=denniskigen-20&linkId=ed7232d0baed4a85880d157f0fb49cbc">
                     15" Macbook Pro, 2.3 GHz 8-Core Intel Core i9 16GB of RAM,
                     Intel UHD Graphics 630 1.5GB (2019)
                   </ExternalLink>
@@ -42,10 +37,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://www.amazon.com/gp/product/B07PX8JMJV/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07PX8JMJV&linkCode=as2&tag=denniskigen-20&linkId=cc60a0f2b8ebcc9291f0b8a27840f34a"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.amazon.com/gp/product/B07PX8JMJV/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07PX8JMJV&linkCode=as2&tag=denniskigen-20&linkId=cc60a0f2b8ebcc9291f0b8a27840f34a">
                     LG 27UL550-W 27 Inch 4K UHD IPS LED HDR Monitor
                   </ExternalLink>
                 </p>
@@ -59,10 +51,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://www.amazon.com/gp/product/B01NABDNPH/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01NABDNPH&linkCode=as2&tag=denniskigen-20&linkId=a1c85b07bdf64ecdd74d82029d602169"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.amazon.com/gp/product/B01NABDNPH/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01NABDNPH&linkCode=as2&tag=denniskigen-20&linkId=a1c85b07bdf64ecdd74d82029d602169">
                     Apple Magic Keyboard 2
                   </ExternalLink>
                 </p>
@@ -73,10 +62,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://www.amazon.com/gp/product/B08PL57CBR/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08PL57CBR&linkCode=as2&tag=denniskigen-20&linkId=870a264473e0a5b7c4cea263c0977b9f"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.amazon.com/gp/product/B08PL57CBR/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08PL57CBR&linkCode=as2&tag=denniskigen-20&linkId=870a264473e0a5b7c4cea263c0977b9f">
                     Apple Magic Mouse 2
                   </ExternalLink>
                 </p>
@@ -87,10 +73,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://www.amazon.com/gp/product/B07H2DBFQZ/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=denniskigen-20&creative=9325&linkCode=as2&creativeASIN=B07H2DBFQZ&linkId=004d2fdee5b27c381a6ab039a2ed4e63"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.amazon.com/gp/product/B07H2DBFQZ/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=denniskigen-20&creative=9325&linkCode=as2&creativeASIN=B07H2DBFQZ&linkId=004d2fdee5b27c381a6ab039a2ed4e63">
                     Sony WH-1000XM3 Noise Cancelling Headphones
                   </ExternalLink>
                 </p>
@@ -102,16 +85,13 @@ export default function Uses() {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl font-bold text-black dark:text-white">
+            <h2 className="font-medium text-neutral-600 dark:text-neutral-400">
               Development
             </h2>
-            <ul className="mt-4 list-disc space-y-6 pl-5 dark:text-slate-400">
+            <ul className="mt-4 list-none space-y-6">
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://code.visualstudio.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://code.visualstudio.com/">
                     VS Code
                   </ExternalLink>
                 </p>
@@ -129,10 +109,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme">
                     GitHub Dark Theme
                   </ExternalLink>
                 </p>
@@ -143,10 +120,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://developer.apple.com/fonts/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://developer.apple.com/fonts/">
                     SF Mono
                   </ExternalLink>
                 </p>
@@ -157,10 +131,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://www.google.com/chrome/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.google.com/chrome/">
                     Chrome
                   </ExternalLink>
                 </p>
@@ -171,24 +142,21 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://octolinker.vercel.app/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://octolinker.vercel.app/">
                     OctoLinker
                   </ExternalLink>
                 </p>
                 <p>
                   Browser extension that turns keywords like{" "}
-                  <span className="bg-gray-200 text-slate-500 dark:bg-gray-700 dark:text-white">
+                  <span className="bg-gray-200 text-slate-500 dark:bg-gray-700">
                     include
                   </span>
                   ,{" "}
-                  <span className="bg-gray-200 text-slate-500 dark:bg-gray-700 dark:text-white">
+                  <span className="bg-gray-200 text-slate-500 dark:bg-gray-700">
                     require
                   </span>
                   , or{" "}
-                  <span className="bg-gray-200 text-slate-500 dark:bg-gray-700 dark:text-white">
+                  <span className="bg-gray-200 text-slate-500 dark:bg-gray-700">
                     import
                   </span>
                   , into links, essentially enabling you to rapidly navigate
@@ -197,10 +165,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://tableplus.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://tableplus.com/">
                     TablePlus
                   </ExternalLink>
                   <a className="text-black underline"></a>
@@ -209,10 +174,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://hyper.is/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://hyper.is/">
                     Hyper / zsh
                   </ExternalLink>
                 </p>
@@ -251,12 +213,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://github.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
-                    GitHub
-                  </ExternalLink>
+                  <ExternalLink href="https://github.com/">GitHub</ExternalLink>
                 </p>
                 <p>
                   Industry staple. It works, everyone uses it. It's gotten
@@ -265,12 +222,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://vercel.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
-                    Vercel
-                  </ExternalLink>
+                  <ExternalLink href="https://vercel.com/">Vercel</ExternalLink>
                 </p>
                 <p>
                   Phenomenal developer experience. I was blown away the first
@@ -295,12 +247,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://getkap.co/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
-                    Kap
-                  </ExternalLink>
+                  <ExternalLink href="https://getkap.co/">Kap</ExternalLink>
                 </p>
                 <p>
                   Great little screen recording tool. I use this every day to
@@ -310,16 +257,13 @@ export default function Uses() {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl font-bold text-black dark:text-white">
+            <h2 className="font-medium text-neutral-600 dark:text-neutral-400">
               Design
             </h2>
-            <ul className="mt-4 list-disc space-y-6 pl-5 dark:text-slate-400">
+            <ul className="mt-4 list-none space-y-6">
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://www.figma.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.figma.com/">
                     Figma
                   </ExternalLink>
                 </p>
@@ -331,10 +275,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://affinity.serif.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://affinity.serif.com/">
                     Affinity Designer
                   </ExternalLink>
                 </p>
@@ -346,10 +287,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://jakearchibald.github.io/svgomg/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://jakearchibald.github.io/svgomg/">
                     SVGOMG
                   </ExternalLink>
                 </p>
@@ -361,10 +299,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://imageoptim.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://imageoptim.com/">
                     ImageOptim
                   </ExternalLink>
                 </p>
@@ -377,16 +312,13 @@ export default function Uses() {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl font-bold text-black dark:text-white">
+            <h2 className="font-medium text-neutral-600 dark:text-neutral-400">
               Productivity
             </h2>
-            <ul className="mt-4 list-disc space-y-6 pl-5 dark:text-slate-400">
+            <ul className="mt-4 list-none space-y-6">
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://www.alfredapp.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.alfredapp.com/">
                     Alfred
                   </ExternalLink>
                 </p>
@@ -399,10 +331,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://ublockorigin.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://ublockorigin.com/">
                     uBlock Origin
                   </ExternalLink>
                 </p>
@@ -413,10 +342,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://www.notion.so/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.notion.so/">
                     Notion
                   </ExternalLink>
                 </p>
@@ -428,10 +354,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://1password.com/"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://1password.com/">
                     1Password
                   </ExternalLink>
                 </p>
@@ -442,10 +365,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://www.grammarly.com"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://www.grammarly.com">
                     Grammarly
                   </ExternalLink>
                 </p>
@@ -457,10 +377,7 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
-                  <ExternalLink
-                    href="https://apps.apple.com/app/twenttty/id1534796314?mt=12"
-                    styles="underline text-black dark:text-slate-300"
-                  >
+                  <ExternalLink href="https://apps.apple.com/app/twenttty/id1534796314?mt=12">
                     Twenttty
                   </ExternalLink>
                 </p>

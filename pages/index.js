@@ -1,12 +1,13 @@
+import Link from "next/link";
 import Container from "../components/Container";
 import ExternalLink from "../components/ExternalLink";
 
 export default function Home() {
   return (
     <Container>
-      <main className="flex flex-grow flex-col items-start justify-center text-very-grey leading-7 dark:text-very-light antialiased">
+      <main className="flex flex-grow flex-col items-start justify-center">
         <div>
-          <h1 className="leading-7 font-medium">Dennis Kigen</h1>
+          <h1 className="font-medium">Dennis Kigen</h1>
           <p className="mt-8">
             I'm a Frontend Engineer living in Eldoret, Kenya. I'm currently
             building the future of electronic medical records software for the
@@ -181,7 +182,26 @@ export default function Home() {
           <p className="mt-8">
             Enjoying Chillhop when working, and Afrobeats whenever else. Reading
             timeless wisdom from Naval Ravikant, Paul Graham, Swyx, Kent C.
-            Dodds, Krishnamurti, Nassim Taleb and more.
+            Dodds, Krishnamurti, Nassim Taleb and{" "}
+            <Link href="/bookshelf">
+              <a className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200">
+                more
+              </a>
+            </Link>
+            .
+          </p>
+          <p className="mt-8">
+            Curious about my{" "}
+            <ExternalLink href="https://jaredpalmer.com/blog/sharpen-your-axe">
+              tools
+            </ExternalLink>{" "}
+            ? Check out my{" "}
+            <Link href="/uses">
+              <a className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200">
+                uses
+              </a>
+            </Link>{" "}
+            page .
           </p>
         </div>
         <div className="mt-12">
