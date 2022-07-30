@@ -180,15 +180,14 @@ export default function Home() {
             fetching. Curious about Svelte and Prisma.
           </p>
           <p className="mt-8">
-            Enjoying Chillhop when working, and Afrobeats whenever else. Reading
-            timeless wisdom from Naval Ravikant, Paul Graham, Swyx, Kent C.
-            Dodds, Krishnamurti, Nassim Taleb and{" "}
+            Enjoying Chillhop when working, and Afrobeats whenever else. Reading{" "}
             <Link href="/bookshelf">
               <a className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200">
-                more
+                timeless wisdom
               </a>
-            </Link>
-            .
+            </Link>{" "}
+            from Naval Ravikant, Paul Graham, Swyx, Kent C. Dodds, Krishnamurti,
+            Nassim Taleb and more .
           </p>
           <p className="mt-8">
             Curious about my{" "}
