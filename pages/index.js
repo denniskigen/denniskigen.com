@@ -74,7 +74,7 @@ export default function Home() {
                   <span className="flex items-center">
                     AMPATH Forms{" "}
                     <svg
-                      className="ml-1 w-5 h-5 text-neutral-400 dark:text-neutral-600"
+                      className="ml-1 w-5 h-5 text-neutral-600 dark:text-neutral-400"
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
@@ -102,7 +102,7 @@ export default function Home() {
                   <span className="flex items-center">
                     OpenMRS 3.x{" "}
                     <svg
-                      className="ml-1 w-5 h-5 text-neutral-400 dark:text-neutral-600"
+                      className="ml-1 w-5 h-5 text-neutral-600 dark:text-neutral-400"
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
@@ -130,7 +130,7 @@ export default function Home() {
                   <span className="flex items-center">
                     React Weather{" "}
                     <svg
-                      className="ml-1 w-5 h-5 text-neutral-400 dark:text-neutral-600"
+                      className="ml-1 w-5 h-5 text-neutral-600 dark:text-neutral-400"
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
