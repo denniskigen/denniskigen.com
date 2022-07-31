@@ -200,7 +200,13 @@ export default function Home() {
                 uses
               </a>
             </Link>{" "}
-            page .
+            page. Why not check out my curated list of{" "}
+            <Link href="/bookmarks">
+              <a className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200">
+                bookmarks
+              </a>
+            </Link>{" "}
+            as well?
           </p>
         </div>
         <div className="mt-12">
