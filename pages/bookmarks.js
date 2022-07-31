@@ -51,6 +51,26 @@ export default function Bookmarks() {
                 Quality Software
               </ExternalLink>
             </li>
+            <li className="space-y-2">
+              <ExternalLink href="https://overreacted.io/writing-resilient-components/">
+                Writing Resilient Components
+              </ExternalLink>
+            </li>
+            <li className="space-y-2">
+              <ExternalLink href="https://about.gitlab.com/company/culture/all-remote/asynchronous/">
+                Embrace Asynchronous Communication For Remote Work
+              </ExternalLink>
+            </li>
+            <li className="space-y-2">
+              <ExternalLink href="https://www.arcana.computer/industry/being-productive">
+                Being Productive
+              </ExternalLink>
+            </li>
+            <li className="space-y-2">
+              <ExternalLink href="https://kentcdodds.com/blog/write-fewer-longer-tests">
+                Write Fewer, Longer Tests
+              </ExternalLink>
+            </li>
           </ul>
         </div>
       </article>
