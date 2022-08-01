@@ -21,7 +21,7 @@ export default function NotFound() {
           ol button below and skeddadle on home.
         </p>
       </div>
-      <div className="flex items-center mt-8">
+      <div className="flex items-center mt-12">
         <svg
           className="mx-2"
           width="16"

@@ -187,7 +187,7 @@ export default function Home() {
               </a>
             </Link>{" "}
             from Naval Ravikant, Paul Graham, Swyx, Kent C. Dodds, Krishnamurti,
-            Nassim Taleb and more .
+            Nassim Taleb and more.
           </p>
           <p className="mt-8">
             Curious about my{" "}
@@ -200,13 +200,13 @@ export default function Home() {
                 uses
               </a>
             </Link>{" "}
-            page. Why not check out my curated list of{" "}
+            page. You should also check out my list of{" "}
             <Link href="/bookmarks">
               <a className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200">
                 bookmarks
               </a>
             </Link>{" "}
-            as well?
+            curated over my journeys across the interwebs.
           </p>
         </div>
         <div className="mt-12">
