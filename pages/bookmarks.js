@@ -13,7 +13,8 @@ export default function Bookmarks() {
           Bookmarks
         </h1>
         <p className="mt-8">
-          A bunch of links I've collected on my journeys across the interwebs.
+          A bunch of curated links I've collected on my journeys across the
+          interwebs.
         </p>
         <div className="mt-6 mb-16">
           <ul className="mt-4 list-none space-y-6">
