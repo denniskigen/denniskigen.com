@@ -305,8 +305,8 @@ export default function Uses() {
                   </ExternalLink>
                 </p>
                 <p>
-                  Pretty great for optimizing raster images like PNGs and JPEGs.
-                  Reduces the file size dramatically with no discernible
+                  Pretty great for optimizing raster image formats like PNGs and
+                  JPEGs. Reduces the file size dramatically with no discernible
                   difference in quality.
                 </p>
               </li>
@@ -384,8 +384,8 @@ export default function Uses() {
                 </p>
                 <p>
                   It's premise is pretty straightforward, it reminds me to look
-                  away every 20 minutes at an object that is about 20 feet away
-                  for a full 20 seconds. Eye strain begone.
+                  away from my screen every 20 minutes at an object that is
+                  about 20 feet away for a full 20 seconds. Eye strain begone.
                 </p>
               </li>
             </ul>
