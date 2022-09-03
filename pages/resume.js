@@ -77,62 +77,62 @@ export default function Resume() {
             <div className="mt-4">
               <ul className="mt-1 mx-4 list-disc">
                 <li>Roles</li>
-                <ul className="mt-1.5 list-disc list-inside space-x-4 space-y-1">
-                  <ul className="mt-1.5 list-disc list-inside">
+                <ul className="mt-1 mx-4 list-disc space-y-1">
+                  <li>
+                    Led the frontend development of O3 at AMPATH. That involved:
+                  </li>
+                  <ul className="mt-1 list-inside list-disc">
                     <li>
-                      Led the frontend development of O3 at AMPATH. That
-                      involved:
+                      Shipping components built in React and designed using
+                      Carbon in a collaborative effort with a global
+                      multi-organizational team of engineers and designers.
+                    </li>
+                    <li>
+                      Participating in weekly frontend squad calls, unblocking,
+                      troubleshooting, and engaging with community members on
+                      Slack, GitHub and our public forum.
+                    </li>
+                    <li>
+                      Planning and executing architectural improvements to the
+                      platform.
+                    </li>
+                    <li>
+                      Contributing documentation, code reviews, tests, tutorials
+                      and onboarding material.
+                    </li>
+                    <li>
+                      Providing mentorship and technical guidance to developers
+                      of all experience joining the community.
                     </li>
                   </ul>
-                  <li>
-                    Shipping components built in React and designed using Carbon
-                    in a collaborative effort with a global multi-organizational
-                    team of engineers and designers.
-                  </li>
-                  <li>
-                    Participating in weekly frontend squad calls, unblocking,
-                    troubleshooting, and engaging with community members on
-                    Slack, GitHub and our public forum.
-                  </li>
-                  <li>
-                    Planning and executing architectural improvements to the
-                    platform.
-                  </li>
-                  <li>
-                    Contributing documentation, code reviews, tests, tutorials
-                    and onboarding material.
-                  </li>
-                  <li>
-                    Providing mentorship and technical guidance to developers of
-                    all experience joining the community.
-                  </li>
                 </ul>
-                <ul className="mt-3 list-disc list-inside space-y-1 space-x-4">
+                <ul className="mt-2 mx-4 list-disc space-y-1">
+                  <li>
+                    Served as the sole engineer supporting the{" "}
+                    <ExternalLink href="https://globalhealth.iu.edu/impact-map/breast-cancer.html">
+                      AMPATH Breast and Cervical Cancer Control Program
+                    </ExternalLink>{" "}
+                    (ABCCCP) grant, supporting 23 providers spread across 13
+                    sites that serve over 179,000 clients. That involved:
+                  </li>
                   <ul className="mt-1.5 list-disc list-inside">
                     <li>
-                      Served as the sole engineer supporting the{" "}
-                      <ExternalLink href="https://globalhealth.iu.edu/impact-map/breast-cancer.html">
-                        AMPATH Breast and Cervical Cancer Control Program
-                      </ExternalLink>{" "}
-                      (ABCCCP) grant, supporting 23 providers spread across 13
-                      sites that serve over 179,000 clients. That involved:
+                      Contributing code, tests, code reviews and documentation
+                      to core AMPATH repositories.
+                    </li>
+                    <li>
+                      Designing, building and maintaining monthly reports that
+                      aggregate data from our electronic forms. I worked on
+                      enhancing and automating the report generation processes
+                      as well as adding new indicators over time per our donor
+                      requirements.
+                    </li>
+                    <li>
+                      Providing mentorship and technical guidance to junior
+                      developers who joined AMPATH through the internship
+                      program.
                     </li>
                   </ul>
-                  <li>
-                    Contributing code, tests, code reviews and documentation to
-                    core AMPATH repositories.
-                  </li>
-                  <li>
-                    Designing, building and maintaining monthly reports that
-                    aggregate data from our electronic forms. I worked on
-                    enhancing and automating the report generation processes as
-                    well as adding new indicators over time per our donor
-                    requirements.
-                  </li>
-                  <li>
-                    Providing mentorship and technical guidance to junior
-                    developers who joined AMPATH through the internship program.
-                  </li>
                 </ul>
               </ul>
             </div>
@@ -158,19 +158,19 @@ export default function Resume() {
           <section className="mt-6 min-w-full">
             <h3>Programming languages and frameworks</h3>
             <div className="flex space-x-10 mt-1.5">
-              <ul className="mt-1 flex-1 mx-4 list-disc text-neutral-600 dark:text-neutral-400">
+              <ul className="mt-1 flex-1 mx-4 list-disc">
                 <li>CSS</li>
                 <li>HTML</li>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
               </ul>
-              <ul className="mt-1 flex-1 mx-4 list-disc text-neutral-600 dark:text-neutral-400">
+              <ul className="mt-1 flex-1 mx-4 list-disc">
                 <li>Angular</li>
                 <li>Next.js</li>
                 <li>Node.js</li>
                 <li>React</li>
               </ul>
-              <ul className="mt-1 flex-1 mx-4 list-disc text-neutral-600 dark:text-neutral-400">
+              <ul className="mt-1 flex-1 mx-4 list-disc">
                 <li>Gatsby</li>
                 <li>TailwindCSS</li>
               </ul>
@@ -179,7 +179,7 @@ export default function Resume() {
           <section className="mt-4 min-w-full">
             <h3>Testing tools</h3>
             <div className="flex space-x-10 mt-1.5">
-              <ul className="mt-1 flex-1 mx-4 list-disc text-neutral-600 dark:text-neutral-400">
+              <ul className="mt-1 flex-1 mx-4 list-disc">
                 <li>Jest</li>
                 <li>Mock Service Worker</li>
                 <li>React Testing Library</li>
@@ -189,13 +189,13 @@ export default function Resume() {
           <section className="mt-4 min-w-full">
             <h3>Frontend tooling</h3>
             <div className="flex space-x-10 mt-1.5">
-              <ul className="mt-1 flex-1 mx-4 list-disc text-neutral-600 dark:text-neutral-400">
+              <ul className="mt-1 flex-1 mx-4 list-disc">
                 <li>Lerna</li>
                 <li>Turborepo</li>
                 <li>Vite</li>
                 <li>Webpack</li>
               </ul>
-              <ul className="mt-1 flex-1 mx-4 list-disc text-neutral-600 dark:text-neutral-400">
+              <ul className="mt-1 flex-1 mx-4 list-disc">
                 <li>pnpm</li>
                 <li>swc</li>
                 <li>yarn</li>
@@ -205,13 +205,13 @@ export default function Resume() {
           <section className="mt-4 min-w-full">
             <h3>Design systems and tools</h3>
             <div className="flex space-x-10 mt-1.5">
-              <ul className="mt-1 flex-1 mx-4 list-disc text-neutral-600 dark:text-neutral-400">
+              <ul className="mt-1 flex-1 mx-4 list-disc">
                 <li>Adobe Illustrator</li>
                 <li>Affinity Designer</li>
                 <li>Carbon Design</li>
                 <li>Material UI</li>
               </ul>
-              <ul className="mt-1 flex-1 mx-4 list-disc text-neutral-600 dark:text-neutral-400">
+              <ul className="mt-1 flex-1 mx-4 list-disc">
                 <li>Figma</li>
               </ul>
             </div>
@@ -219,7 +219,7 @@ export default function Resume() {
           <section className="mt-4 min-w-full">
             <h3>Databases & CI/CD</h3>
             <div className="flex space-x-10 mt-1.5">
-              <ul className="mt-1 flex-1 mx-4 list-disc text-neutral-600 dark:text-neutral-400">
+              <ul className="mt-1 flex-1 mx-4 list-disc">
                 <li>GitHub Actions</li>
                 <li>MySQL</li>
               </ul>

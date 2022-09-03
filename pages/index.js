@@ -13,7 +13,7 @@ export default function Home() {
             Engineer living in Eldoret, Kenya. I'm currently building the future
             of electronic medical records software for the developing world at{" "}
             <svg
-              className="mx-2 inline-flex mb-1 h-6 w-6"
+              className="mx-2 inline-flex mb-1 h-5 w-5"
               width="20"
               height="20"
               clipRule="evenodd"
@@ -42,7 +42,7 @@ export default function Home() {
             </ExternalLink>{" "}
             and
             <svg
-              className="mx-2 inline-flex mb-1 h-6 w-6"
+              className="mx-2 inline-flex mb-1 h-5 w-5"
               height="108.174"
               width="108.126"
               viewBox="0 0 108.174 108.126"
