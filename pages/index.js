@@ -7,11 +7,11 @@ export default function Home() {
     <Container>
       <main className="flex flex-grow flex-col items-start justify-center">
         <div>
-          <h1 className="font-medium">Dennis Kigen</h1>
+          <h1 className="text-lg">Dennis Kigen</h1>
           <p className="mt-8">
-            I'm a Frontend Engineer living in Eldoret, Kenya. I'm currently
-            building the future of electronic medical records software for the
-            developing world at{" "}
+            <span className="font-semibold">Hi, I'm Dennis</span>, a Frontend
+            Engineer living in Eldoret, Kenya. I'm currently building the future
+            of electronic medical records software for the developing world at{" "}
             <svg
               className="mx-2 inline-flex mb-1 h-6 w-6"
               width="20"
