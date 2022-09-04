@@ -7,7 +7,7 @@ export default function Home() {
     <Container>
       <main className="flex flex-grow flex-col items-start justify-center">
         <div>
-          <h1 className="text-2xl font-semibold mt-8">Dennis Kigen</h1>
+          <h1 className="text-2xl font-semibold">Dennis Kigen</h1>
           <p className="mt-8">
             Frontend Engineer in love with crafting user interfaces.
           </p>
