@@ -36,13 +36,14 @@ export default function Resume() {
                     <ExternalLink href="https://github.com/ampath/ng2-amrs">
                       AMPATH Point of Care
                     </ExternalLink>{" "}
-                    is an open-source electronic medical records used at AMPATH
-                    facilities. Medical providers use tablets and personal
-                    computers to enter and view rich clinical information
-                    including vital signs, lab reports, and important alerts
-                    regarding care needs. It features an Angular frontend built
-                    using Bootstrap, a Node.js backend that interfaces with a
-                    replicated MySQL database. Additionally, it includes a{" "}
+                    is an open-source electronic medical records system used at
+                    AMPATH facilities. Medical providers use tablets and
+                    personal computers to enter and view rich clinical
+                    information including vital signs, lab reports, and
+                    important alerts regarding care needs. It features an
+                    Angular frontend built using Bootstrap, a Node.js backend
+                    that interfaces with a replicated MySQL database.
+                    Additionally, it includes a{" "}
                     <ExternalLink href="https://ampath-forms.vercel.app/">
                       form builder
                     </ExternalLink>{" "}
