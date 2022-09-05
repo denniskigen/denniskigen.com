@@ -6,7 +6,7 @@ export default function Uses() {
   return (
     <Container title="Dennis Kigen - Uses">
       <article className="flex w-full flex-col items-start justify-center">
-        <h1 className="font-medium">Uses</h1>
+        <h1 className="text-2xl font-semibold">Uses</h1>
         <p className="mt-8">
           This page covers the different tools I use for my work.
         </p>
@@ -17,10 +17,10 @@ export default function Uses() {
         </p>
         <div className="mt-8 space-y-10">
           <div>
-            <h2 className="font-medium text-neutral-600 dark:text-neutral-400">
+            <h2 className="text-xl font-semibold text-neutral-600 dark:text-neutral-400">
               Hardware
             </h2>
-            <ul className="mt-4 list-none space-y-6">
+            <ul className="mt-8 list-none space-y-6">
               <li className="space-y-2">
                 <p className="font-medium leading-normal">
                   <ExternalLink href="https://www.amazon.com/gp/product/B083Z22L3H/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B083Z22L3H&linkCode=as2&tag=denniskigen-20&linkId=ed7232d0baed4a85880d157f0fb49cbc">
@@ -86,10 +86,10 @@ export default function Uses() {
             </ul>
           </div>
           <div>
-            <h2 className="font-medium text-neutral-600 dark:text-neutral-400">
+            <h2 className="text-xl font-semibold text-neutral-600 dark:text-neutral-400">
               Development
             </h2>
-            <ul className="mt-4 list-none space-y-6">
+            <ul className="mt-8 list-none space-y-6">
               <li className="space-y-2">
                 <p className="font-medium">
                   <ExternalLink href="https://code.visualstudio.com/">
@@ -258,10 +258,10 @@ export default function Uses() {
             </ul>
           </div>
           <div>
-            <h2 className="font-medium text-neutral-600 dark:text-neutral-400">
+            <h2 className="text-xl font-semibold text-neutral-600 dark:text-neutral-400">
               Design
             </h2>
-            <ul className="mt-4 list-none space-y-6">
+            <ul className="mt-8 list-none space-y-6">
               <li className="space-y-2">
                 <p className="font-medium">
                   <ExternalLink href="https://www.figma.com/">
@@ -313,10 +313,10 @@ export default function Uses() {
             </ul>
           </div>
           <div>
-            <h2 className="font-medium text-neutral-600 dark:text-neutral-400">
+            <h2 className="text-xl font-semibold text-neutral-600 dark:text-neutral-400">
               Productivity
             </h2>
-            <ul className="mt-4 list-none space-y-6">
+            <ul className="mt-8 list-none space-y-6">
               <li className="space-y-2">
                 <p className="font-medium">
                   <ExternalLink href="https://www.alfredapp.com/">

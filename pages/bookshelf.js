@@ -6,7 +6,7 @@ export default function BookShelf() {
   return (
     <Container title="Dennis Kigen - Bookshelf">
       <article className="flex w-full flex-col items-start justify-center">
-        <h1 className="font-medium text-neutral-600 dark:text-neutral-400">
+        <h1 className="text-2xl font-semibold text-neutral-600 dark:text-neutral-400">
           Bookshelf
         </h1>
         <p className="mt-8">

@@ -6,9 +6,13 @@ export default function Resume() {
   return (
     <Container title="Dennis Kigen - Resume">
       <article className="flex flex-grow flex-col items-start justify-center">
-        <h1>Resume</h1>
+        <h1 className="text-2xl font-semibold text-neutral-600 dark:text-neutral-400">
+          Resume
+        </h1>
         <div className="mt-8 min-w-full">
-          <h1 className="font-medium">Relevant Professional Experience</h1>
+          <h1 className="text-xl font-medium">
+            Relevant Professional Experience
+          </h1>
           <div className="mt-6">
             <div className="flex justify-between">
               <h1>Software Engineer</h1>
@@ -140,7 +144,7 @@ export default function Resume() {
           </div>
         </div>
         <div className="mt-8 min-w-full">
-          <h1 className="font-medium">Education</h1>
+          <h1 className="text-xl font-medium">Education</h1>
           <div className="flex justify-between mt-6">
             <div>
               <h1>Moi University</h1>
@@ -155,7 +159,7 @@ export default function Resume() {
           </div>
         </div>
         <div className="mt-8 min-w-full">
-          <h1 className="font-medium">Tech Stack</h1>
+          <h1 className="text-xl font-medium">Tech Stack</h1>
           <section className="mt-6 min-w-full">
             <h3>Programming languages and frameworks</h3>
             <div className="flex space-x-10 mt-1.5">
