@@ -10,8 +10,8 @@ export default function BookShelf() {
           Bookshelf
         </h1>
         <p className="mt-8">
-          Here's the books I'm currently reading for the first time or
-          re-reading.
+          The following is a list of books I'm currently reading for the first
+          time or re-reading.
         </p>
         <p className="mt-8">
           A few of the links below are affiliate links which means I get paid or

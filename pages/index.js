@@ -85,7 +85,7 @@ export default function Home() {
           <h2 className="text-lg font-medium text-neutral-600 dark:text-neutral-400">
             Projects
           </h2>
-          <section className="mt-4 flex space-x-10">
+          <section className="mt-4 flex space-x-5 md:space-x-10">
             <div className="mt-4 space-y-2 flex-1">
               <h3>
                 <ExternalLink href="https://ampath-forms.vercel.app">
@@ -142,7 +142,7 @@ export default function Home() {
                 open-source EMR.
               </p>
             </div>
-            <div className="mt-4 hidden md:block space-y-2 flex-1">
+            <div className="mt-4 space-y-2 flex-1">
               <h3>
                 <ExternalLink href="https://react-weather.denniskigen.com">
                   <span className="flex items-center">
