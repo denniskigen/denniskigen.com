@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.7",
-    "esbuild": "^0.15.6",
-    "next": "^12.2.5",
-    "next-themes": "^0.2.0",
+    "esbuild": "^0.15.7",
+    "next": "^12.3.0",
+    "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
