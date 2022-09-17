@@ -34,7 +34,7 @@ function About() {
       </svg>
       <p className="">
         Building the future of open-source electronic medical records software
-        for the developing world at{" "}
+        for the developing world at
         <svg
           className="mx-2 inline-flex mb-1 h-4 w-4"
           width="20"
