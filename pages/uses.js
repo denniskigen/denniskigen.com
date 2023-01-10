@@ -332,6 +332,17 @@ export default function Uses() {
               </li>
               <li className="space-y-2">
                 <p className="font-medium">
+                  <ExternalLink href="https://raycast.com/">
+                    Raycast
+                  </ExternalLink>
+                </p>
+                <p>
+                  I use Raycast lately a lot more than Alfred. It's got a great
+                  ecosystem of extensions and is a great alternative to Alfred.
+                </p>
+              </li>
+              <li className="space-y-2">
+                <p className="font-medium">
                   <ExternalLink href="https://ublockorigin.com/">
                     uBlock Origin
                   </ExternalLink>
