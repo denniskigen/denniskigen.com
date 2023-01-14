@@ -44,8 +44,8 @@ function About() {
 
       <p className="my-8">
         Frontend Engineer crafting user interfaces. Interested in crafting
-        magical web experiences, dev experiences, documentation, and shipping
-        maintainable code.
+        magical web experiences, DX, documentation, and shipping maintainable
+        code.
       </p>
 
       <p className="">
