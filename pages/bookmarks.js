@@ -90,10 +90,11 @@ export default function Bookmarks() {
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
-          <Link href="/">
-            <a className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200">
-              Return home
-            </a>
+          <Link
+            className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200"
+            href="/"
+          >
+            Return home
           </Link>
         </div>
       </article>
