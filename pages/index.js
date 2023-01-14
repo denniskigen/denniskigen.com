@@ -25,7 +25,7 @@ function About() {
           src="/dennis-avatar.png"
           alt="Dennis' avatar"
         />
-        <h1 className="text-lg font-semibold">Dennis Kigen</h1>
+        <h1 className="text-lg tracking-wide font-semibold">Dennis Kigen</h1>
       </div>
 
       <svg
@@ -39,9 +39,9 @@ function About() {
       </svg>
 
       <p className="my-8">
-        Frontend Engineer crafting user interfaces. Interested in dev
-        experience, crafting magical web experiences and shipping maintainable
-        code.
+        Frontend Engineer crafting user interfaces. Interested in crafting
+        magical web experiences, dev experiences, documentation, and shipping
+        maintainable code.
       </p>
 
       <p className="">
@@ -71,44 +71,17 @@ function About() {
 function Projects() {
   return (
     <div className="mt-12">
-      <h2 className="text-lg font-medium text-neutral-600 dark:text-neutral-400">
+      <h2 className="text-lg font-medium text-neutral-500 dark:text-neutral-400">
         Projects
       </h2>
-      <section className="mt-4 flex space-x-5 md:space-x-10">
-        <div className="mt-4 space-y-2 flex-1">
-          <h3>
-            <ExternalLink href="https://ampath-forms.vercel.app">
-              <span className="flex items-center">
-                AMPATH Forms{" "}
-                <svg
-                  className="ml-1 w-5 h-5 text-neutral-600 dark:text-neutral-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </span>
-            </ExternalLink>
-          </h3>
-          <p className="text-neutral-600 dark:text-neutral-400">
-            Documenting how to build, test and validate OpenMRS form schemas.
-          </p>
-        </div>
-        <div className="mt-4 space-y-2 flex-1">
+      <section className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-8 md:gap-y-8">
+        <div className="flex-col h-full relative cursor-default">
           <h3>
             <ExternalLink href="https://dev3.openmrs.org/openmrs/spa">
               <span className="flex items-center">
                 OpenMRS 3.x{" "}
                 <svg
-                  className="ml-1 w-5 h-5 text-neutral-600 dark:text-neutral-400"
+                  className="ml-1 w-5 h-5 text-neutral-500 dark:text-neutral-400"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -125,18 +98,73 @@ function Projects() {
               </span>
             </ExternalLink>
           </h3>
-          <p className="text-neutral-600 dark:text-neutral-400">
+          <p className="text-neutral-500 dark:text-neutral-400 mt-2.5">
             Building the new frontend for the world's most popular open-source
             EMR.
           </p>
         </div>
-        <div className="mt-4 space-y-2 flex-1">
+        <div className="flex-col h-full relative cursor-default">
+          <h3>
+            <ExternalLink href="https://github.com/openmrs/openmrs-esm-form-builder">
+              <span className="flex items-center">
+                O3 Form Builder{" "}
+                <svg
+                  className="ml-1 w-5 h-5 text-neutral-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </ExternalLink>
+            <p className="text-neutral-500 dark:text-neutral-400 mt-2.5">
+              Build, test and publish OpenMRS forms, without the tears.
+            </p>
+          </h3>
+        </div>
+        <div className="flex-col h-full relative cursor-default">
+          <h3>
+            <ExternalLink href="https://ampath-forms.vercel.app">
+              <span className="flex items-center">
+                AMPATH Forms{" "}
+                <svg
+                  className="ml-1 w-5 h-5 text-neutral-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </ExternalLink>
+          </h3>
+          <p className="text-neutral-500 dark:text-neutral-400 mt-2.5">
+            Documenting how to build, test and validate form schemas for
+            OpenMRS.
+          </p>
+        </div>
+        <div className="flex-col h-full relative cursor-default">
           <h3>
             <ExternalLink href="https://react-weather.denniskigen.com">
               <span className="flex items-center">
                 React Weather{" "}
                 <svg
-                  className="ml-1 w-5 h-5 text-neutral-600 dark:text-neutral-400"
+                  className="ml-1 w-5 h-5 text-neutral-500 dark:text-neutral-400"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -153,7 +181,7 @@ function Projects() {
               </span>
             </ExternalLink>
           </h3>
-          <p className="text-neutral-600 dark:text-neutral-400">
+          <p className="text-neutral-500 dark:text-neutral-400 mt-2.5">
             Weather that's easy on the eyes.
           </p>
         </div>
@@ -165,7 +193,7 @@ function Projects() {
 function Ethos() {
   return (
     <div className="mt-12">
-      <h2 className="text-lg font-medium text-neutral-600 dark:text-neutral-400">
+      <h2 className="text-lg font-medium text-neutral-500 dark:text-neutral-400">
         Ethos
       </h2>
       <p className="mt-8">
@@ -186,27 +214,29 @@ function Ethos() {
 function Current() {
   return (
     <div className="mt-12">
-      <h1 className="text-lg font-medium text-neutral-600 dark:text-neutral-400">
+      <h1 className="text-lg font-medium text-neutral-500 dark:text-neutral-400">
         Present
       </h1>
       <p className="mt-8">
         Building fast, polished software for the web using modern features in
         JavaScript, HTML and CSS. Betting my future on React and Next.js for
-        user interfaces. Setting my stall out on Tailwind and TypeScript.
-        Experimenting with Vite for tooling and Zustand for state management.
-        Loving Nextra for documentation and SWR for data fetching. Curious about
+        user interfaces. Setting my stall out on Tailwind for styling and
+        TypeScript for type safety. Experimenting with Vite and Turbo for
+        tooling and Zustand for state management. Loving Nextra for
+        documentation and SWR for data fetching. Reaching for Testing Library,
+        Jest, Vitest, MSW and Playwright for testing. Curious about tRPC, Astro,
         Svelte and Prisma.
       </p>
       <p className="mt-8">
         <Link
-          className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200"
+          className="underline underline-offset-4 decoration-zinc-200 dark:decoration-zinc-500  hover:decoration-zinc-400 dark:hover:decoration-zinc-200"
           href="/bookshelf"
         >
           Reading
         </Link>{" "}
         and{" "}
         <Link
-          className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200"
+          className="underline underline-offset-4 decoration-zinc-200 dark:decoration-zinc-500  hover:decoration-zinc-400 dark:hover:decoration-zinc-200"
           href="/bookmarks"
         >
           bookmarking
@@ -221,7 +251,7 @@ function Current() {
 function Connect() {
   return (
     <div className="mt-12">
-      <h1 className="text-lg font-medium text-neutral-600 dark:text-neutral-400">
+      <h1 className="text-lg font-medium text-neutral-500 dark:text-neutral-400">
         Connect
       </h1>
       <p className="mt-8">
@@ -237,7 +267,7 @@ function Connect() {
       <p className="mt-8">
         Curious about how I work? Check out my{" "}
         <Link
-          className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200"
+          className="underline underline-offset-4 decoration-zinc-200 dark:decoration-zinc-500  hover:decoration-zinc-400 dark:hover:decoration-zinc-200"
           href="/uses"
         >
           uses

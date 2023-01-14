@@ -10,6 +10,9 @@ module.exports = {
         "very-grey": "#3a3a3a",
         "very-light": "#e5e5e5",
       },
+      fontFamily: {
+        sans: "Inter",
+      },
     },
   },
   plugins: [],
