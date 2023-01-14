@@ -29,7 +29,7 @@ function About() {
           height={128}
           width={128}
         />
-        <h1 className="text-lg tracking-wide font-semibold">Dennis Kigen</h1>
+        <h1 className="text-xl tracking-wide">Dennis Kigen</h1>
       </div>
 
       <svg
