@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -11,7 +13,7 @@ module.exports = {
         "very-light": "#e5e5e5",
       },
       fontFamily: {
-        sans: "Inter",
+        sans: ["var(--inter-font)", ...defaultTheme.fontFamily.sans],
       },
     },
   },

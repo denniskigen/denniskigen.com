@@ -1,10 +1,23 @@
 import "tailwindcss/tailwind.css";
 import { ThemeProvider } from "next-themes";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({
+  display: "optional",
+  subsets: ["latin"],
+});
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
-      <Component {...pageProps} />
+      <style jsx global>
+        {`
+          :root {
+            --inter-font: ${inter.style.fontFamily};
+          }
+        `}
+      </style>
+      <Component className={inter.variable} {...pageProps} />
     </ThemeProvider>
   );
 }

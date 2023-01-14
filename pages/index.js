@@ -26,6 +26,8 @@ function About() {
           alt="Dennis' avatar"
           className="h-28 w-28 object-cover rounded-full"
           src={avatar}
+          height={128}
+          width={128}
         />
         <h1 className="text-lg tracking-wide font-semibold">Dennis Kigen</h1>
       </div>
