@@ -244,6 +244,16 @@ function Current() {
         timeless wisdom from Naval Ravikant, Paul Graham, Swyx, Kent C. Dodds,
         Krishnamurti, Nassim Taleb and more.
       </p>
+      <p className="mt-8">
+        Curious about how I work? Check out my{" "}
+        <Link
+          className="underline underline-offset-4 decoration-zinc-200 dark:decoration-zinc-500  hover:decoration-zinc-400 dark:hover:decoration-zinc-200"
+          href="/uses"
+        >
+          uses
+        </Link>{" "}
+        page.
+      </p>
     </div>
   );
 }
@@ -263,16 +273,6 @@ function Connect() {
         <ExternalLink href="mailto:kigen.work@gmail.com">
           kigen.work@gmail.com
         </ExternalLink>
-      </p>
-      <p className="mt-8">
-        Curious about how I work? Check out my{" "}
-        <Link
-          className="underline underline-offset-4 decoration-zinc-200 dark:decoration-zinc-500  hover:decoration-zinc-400 dark:hover:decoration-zinc-200"
-          href="/uses"
-        >
-          uses
-        </Link>{" "}
-        page.
       </p>
     </div>
   );
