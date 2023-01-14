@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import Container from "../components/Container";
 import ExternalLink from "../components/ExternalLink";
+import avatar from "../public/dennis-avatar.png";
 
 export default function Home() {
   return (
@@ -20,10 +22,10 @@ function About() {
   return (
     <div>
       <div className="flex-col space-y-8">
-        <img
-          className="w-28 h-28 rounded-full"
-          src="/dennis-avatar.png"
+        <Image
           alt="Dennis' avatar"
+          className="h-28 w-28 object-cover rounded-full"
+          src={avatar}
         />
         <h1 className="text-lg tracking-wide font-semibold">Dennis Kigen</h1>
       </div>
