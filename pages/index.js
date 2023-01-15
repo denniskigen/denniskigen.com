@@ -48,11 +48,11 @@ function About() {
         code.
       </p>
 
-      <p className="">
+      <p className="my-8">
         Currently building the future of open-source electronic medical records
         software for the developing world at{" "}
         <ExternalLink href="https://openmrs.org/">
-          <span className="font-medium">OpenMRS</span>
+          <span>OpenMRS</span>
         </ExternalLink>
         .
       </p>
@@ -60,11 +60,11 @@ function About() {
       <p className="my-8">
         Previously, I worked at{" "}
         <ExternalLink href="https://www.ampathkenya.org/">
-          <span className="font-medium">AMPATH</span>
+          <span>AMPATH</span>
         </ExternalLink>
         , where I focused on{" "}
         <ExternalLink href="https://www.ampathkenya.org/pointofcare">
-          <span className="font-medium">AMPATH Point-of-Care</span>
+          <span>AMPATH Point-of-Care</span>
         </ExternalLink>
         .
       </p>
