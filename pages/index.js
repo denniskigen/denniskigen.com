@@ -57,7 +57,7 @@ function About() {
         .
       </p>
 
-      <p className="my-8">
+      <p className="mt-8">
         Previously, I worked at{" "}
         <ExternalLink href="https://www.ampathkenya.org/">
           <span>AMPATH</span>
