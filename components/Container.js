@@ -57,7 +57,7 @@ export default function Container(props) {
         )}
       </Head>
       <Navbar />
-      <main className="mx-auto flex max-w-3xl flex-col justify-center px-8 py-16 xl:py-20 leading-7 text-slate-900 dark:text-slate-200">
+      <main className="mx-auto flex max-w-3xl flex-col justify-center px-8 py-16 xl:py-20 text-slate-900 dark:text-slate-200 leading-7">
         {children}
       </main>
     </div>
