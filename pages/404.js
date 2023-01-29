@@ -7,7 +7,7 @@ export default function NotFound() {
     <Container title="404 – Dennis Kigen">
       <div className="mx-auto flex max-w-2xl flex-col items-start justify-center">
         <h1 className="my-1 font-medium text-lg">404</h1>
-        <h1 className="my-1 font-medium text-lg">Whoa there, Cowboy!</h1>
+        <h2 className="my-1 font-medium text-lg">Whoa there, Cowboy!</h2>
         <div className="my-8">
           <Image
             src="/dance-off-cowboy.gif"
@@ -23,21 +23,20 @@ export default function NotFound() {
       </div>
       <div className="flex items-center mt-12">
         <svg
-          className="mx-2"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          viewBox="0 0 3 6"
+          class="mr-3 w-auto h-1.5 text-slate-400 overflow-visible group-hover:text-slate-600 dark:group-hover:text-slate-300"
         >
-          <line x1="19" y1="12" x2="5" y2="12"></line>
-          <polyline points="12 19 5 12 12 5"></polyline>
+          <path
+            d="M3 0L0 3L3 6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
         </svg>
         <Link
-          className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200"
+          className="text-slate-700 font-semibold flex items-center dark:text-slate-200"
           href="/"
         >
           Return home

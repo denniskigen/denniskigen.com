@@ -17,7 +17,7 @@ export default function Uses() {
         </p>
         <div className="mt-8 space-y-10">
           <div>
-            <h2 className="text-xl font-semibold text-neutral-600 dark:text-neutral-400">
+            <h2 className="text-lg text-slate-900 dark:text-slate-200 font-bold">
               Hardware
             </h2>
             <ul className="mt-8 list-none space-y-6">
@@ -86,7 +86,7 @@ export default function Uses() {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-neutral-600 dark:text-neutral-400">
+            <h2 className="text-lg text-slate-900 dark:text-slate-200 font-bold">
               Development
             </h2>
             <ul className="mt-8 list-none space-y-6">
@@ -258,7 +258,7 @@ export default function Uses() {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-neutral-600 dark:text-neutral-400">
+            <h2 className="text-lg text-slate-900 dark:text-slate-200 font-bold">
               Design
             </h2>
             <ul className="mt-8 list-none space-y-6">
@@ -313,7 +313,7 @@ export default function Uses() {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-neutral-600 dark:text-neutral-400">
+            <h2 className="text-lg text-slate-900 dark:text-slate-200 font-bold">
               Productivity
             </h2>
             <ul className="mt-8 list-none space-y-6">
@@ -404,21 +404,20 @@ export default function Uses() {
         </div>
         <div className="flex items-center mt-12">
           <svg
-            className="mx-1"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            viewBox="0 0 3 6"
+            class="mr-3 w-auto h-1.5 text-slate-400 overflow-visible group-hover:text-slate-600 dark:group-hover:text-slate-300"
           >
-            <line x1="19" y1="12" x2="5" y2="12"></line>
-            <polyline points="12 19 5 12 12 5"></polyline>
+            <path
+              d="M3 0L0 3L3 6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
           </svg>
           <Link
-            className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200"
+            className="text-slate-700 font-semibold flex items-center dark:text-slate-200"
             href="/"
           >
             Return home

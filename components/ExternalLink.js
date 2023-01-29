@@ -1,7 +1,9 @@
 export default function ExternalLink({ href, children, styles }) {
   return (
     <a
-      className={`underline underline-offset-4 decoration-zinc-200 dark:decoration-zinc-500 hover:decoration-zinc-400 dark:hover:decoration-zinc-200 ${styles}`}
+      className={`underline underline-offset-4 font-medium  decoration-sky-400 text-slate-900 dark:text-white ${
+        styles ?? ""
+      }`}
       target="_blank"
       rel="noopener noreferrer"
       href={href}

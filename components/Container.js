@@ -13,7 +13,7 @@ export default function Container(props) {
   };
 
   return (
-    <div className="min-h-screen mx-auto dark:bg-subtle-dark">
+    <div className="min-h-screen mx-auto antialiased bg-white dark:bg-slate-900">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -36,7 +36,7 @@ export default function Container(props) {
         )}
       </Head>
       <Navbar />
-      <main className="mx-auto flex max-w-3xl flex-col justify-center px-8 py-16 xl:py-20 leading-7 text-very-grey dark:text-very-light">
+      <main className="mx-auto flex max-w-3xl flex-col justify-center px-8 py-16 xl:py-20 leading-7 text-slate-900 dark:text-slate-200">
         {children}
       </main>
     </div>
