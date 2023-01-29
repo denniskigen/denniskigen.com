@@ -7,7 +7,7 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: "Dennis Kigen",
-    description: `Frontend Engineer, JavaScript enthusiast, nerd.`,
+    description: `Software Craftsman. Frontend Engineer.`,
     type: "website",
     ...customMeta,
   };
@@ -26,6 +26,7 @@ export default function Container(props) {
           rel="canonical"
           href={`https://denniskigen.com${router.asPath}`}
         />
+        <link rel="icon" type="image/png" href="favicon.ico?v=1" />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Dennis Kigen" />
         <meta property="og:description" content={meta.description} />
