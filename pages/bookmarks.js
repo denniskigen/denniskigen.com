@@ -9,9 +9,7 @@ export default function Bookmarks() {
     Dennis Kigen - Bookmarks"
     >
       <article className="flex w-full flex-col items-start justify-center">
-        <h1 className="text-lg text-slate-900 dark:text-slate-200 font-bold">
-          Bookmarks
-        </h1>
+        <h1 className="text-2xl font-bold">Bookmarks</h1>
         <p className="mt-8">
           A bunch of curated links I've collected on my journeys across the
           interwebs.
