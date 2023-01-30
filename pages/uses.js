@@ -264,6 +264,11 @@ export default function Uses() {
               </li>
               <li>
                 <span className="font-medium">
+                  <ExternalLink href="https://tabby.sh">Tabby</ExternalLink>
+                </span>
+              </li>
+              <li>
+                <span className="font-medium">
                   <ExternalLink href="https://zeplin.io">Zeplin</ExternalLink>
                 </span>
               </li>
