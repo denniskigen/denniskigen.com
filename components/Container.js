@@ -27,6 +27,7 @@ export default function Container(props) {
           href={`https://denniskigen.com${router.asPath}`}
         />
         <link rel="icon" type="image/png" href="favicon.ico?v=1" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
