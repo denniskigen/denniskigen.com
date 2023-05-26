@@ -24,7 +24,7 @@ function About() {
       <div className="flex space-x-6 items-center">
         <Image
           alt="Dennis' avatar"
-          className="h-[72px] w-[72px] object-cover rounded-full shadow-lg p-px"
+          className="h-[96px] w-[96px] object-cover rounded-full shadow-lg p-px"
           src={avatar}
           height={128}
           width={128}
@@ -232,14 +232,14 @@ function Current() {
       </p>
       <p className="mt-8">
         <Link
-          className="underline underline-offset-4 font-medium  decoration-sky-400 text-slate-900 dark:text-white"
+          className="underline underline-offset-[6px] font-medium  decoration-gray-500 text-slate-900 dark:text-white"
           href="/bookshelf"
         >
           Reading
         </Link>{" "}
         and{" "}
         <Link
-          className="underline underline-offset-4 font-medium  decoration-sky-400 text-slate-900 dark:text-white"
+          className="underline underline-offset-[6px] font-medium  decoration-gray-500 text-slate-900 dark:text-white"
           href="/bookmarks"
         >
           bookmarking
@@ -250,7 +250,7 @@ function Current() {
       <p className="mt-8">
         Curious about how I work? Check out my{" "}
         <Link
-          className="underline underline-offset-4 font-medium  decoration-sky-400 text-slate-900 dark:text-white"
+          className="underline underline-offset-[6px] font-medium  decoration-gray-500 text-slate-900 dark:text-white"
           href="/uses"
         >
           uses
