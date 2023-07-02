@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@next/font': ^13.4.7
   '@tailwindcss/typography': ^0.5.9
   autoprefixer: ^10.4.14
   esbuild: ^0.18.11
@@ -16,7 +15,6 @@ specifiers:
   tailwindcss: ^3.3.2
 
 dependencies:
-  '@next/font': 13.4.7
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.3.2
   esbuild: 0.18.11
   eslint: 8.44.0
@@ -328,10 +326,6 @@ packages:
 
   /@next/env/13.4.7:
     resolution: {integrity: sha512-ZlbiFulnwiFsW9UV1ku1OvX/oyIPLtMk9p/nnvDSwI0s7vSoZdRtxXNsaO+ZXrLv/pMbXVGq4lL8TbY9iuGmVw==}
-    dev: false
-
-  /@next/font/13.4.7:
-    resolution: {integrity: sha512-l28ifb3pjKznQeXmiCD5VXkmqdpMrcUQMr4ZChAgTKrjckl/aGyRLOIlL/ABhTHmzMujdt/TTWUsdABArNK5gA==}
     dev: false
 
   /@next/swc-darwin-arm64/13.4.7:

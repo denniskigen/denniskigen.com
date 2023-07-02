@@ -1,6 +1,6 @@
 import "tailwindcss/tailwind.css";
 import { ThemeProvider } from "next-themes";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 
 const inter = Inter({
   display: "optional",
