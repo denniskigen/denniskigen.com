@@ -58,7 +58,7 @@ function About() {
 
       <p className="my-8">
         Currently building the future of open-source electronic medical records
-        software for the developing world at{" "}
+        software for the developing world at {" "}
         <ExternalLink href="https://openmrs.org/">
           <span>OpenMRS</span>
         </ExternalLink>
@@ -110,6 +110,31 @@ function Projects() {
           <p className="text-slate-900 dark:text-slate-200 mt-2.5">
             Building the new frontend for the world's most popular open-source
             EMR.
+          </p>
+        </div>
+        <div className="flex-col h-full relative cursor-default">
+          <h3>
+            <ExternalLink href="https://o3-docs.vercel.app">
+              <span className="flex items-center">
+                O3 Docs{" "}
+                <svg
+                  viewBox="0 0 3 6"
+                  className="ml-3 h-1.5 w-1.5 text-slate-400 overflow-visible group-hover:text-slate-600 dark:group-hover:text-slate-300"
+                >
+                  <path
+                    d="M0 0L3 3L0 6"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>
+              </span>
+            </ExternalLink>
+          </h3>
+          <p className="text-slate-900 dark:text-slate-200 mt-2.5">
+            Documentation site for O3, the frontend framework for OpenMRS.
           </p>
         </div>
         <div className="flex-col h-full relative cursor-default">
@@ -188,6 +213,7 @@ function Projects() {
             Weather that's easy on the eyes.
           </p>
         </div>
+
       </section>
     </div>
   );
