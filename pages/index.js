@@ -58,7 +58,7 @@ function About() {
 
       <p className="my-8">
         Currently building the future of open-source electronic medical records
-        software for the developing world at {" "}
+        software for the developing world at{" "}
         <ExternalLink href="https://openmrs.org/">
           <span>OpenMRS</span>
         </ExternalLink>
@@ -109,7 +109,7 @@ function Projects() {
           </h3>
           <p className="text-slate-900 dark:text-slate-200 mt-2.5">
             Building the new frontend for the world's most popular open-source
-            EMR.
+            electronic health records system.
           </p>
         </div>
         <div className="flex-col h-full relative cursor-default">
@@ -213,7 +213,6 @@ function Projects() {
             Weather that's easy on the eyes.
           </p>
         </div>
-
       </section>
     </div>
   );
