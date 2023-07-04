@@ -3,23 +3,18 @@ import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
-  display: "optional",
   subsets: ["latin"],
+  display: "swap",
   variable: "--font-inter",
 });
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
-      <style jsx global>
-        {`
-          :root {
-            --inter-font: ${inter.style.fontFamily};
-          }
-        `}
-      </style>
-      <Component className={inter.variable} {...pageProps} />
-    </ThemeProvider>
+    <div lang="en" className={`${inter.variable} font-sans`}>
+      <ThemeProvider attribute="class">
+        <Component className={inter.variable} {...pageProps} />
+      </ThemeProvider>
+    </div>
   );
 }
 
