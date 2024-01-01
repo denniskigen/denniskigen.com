@@ -1,18 +1,13 @@
 import "tailwindcss/tailwind.css";
+import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
+import { cn } from "../lib/utils";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div lang="en" className={`${inter.variable} font-sans`}>
+    <div lang="en" className={cn("font-sans", GeistSans.className)}>
       <ThemeProvider attribute="class">
-        <Component className={inter.variable} {...pageProps} />
+        <Component {...pageProps} />
       </ThemeProvider>
     </div>
   );
