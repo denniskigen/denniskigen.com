@@ -85,9 +85,8 @@ export default function Uses() {
       items: [
         {
           name: "Visual Studio Code",
-          link: "https://code.visualstudio.com",
-          description:
-            "Find all my VS Code settings [here](https://gist.github.com/denniskigen/ff67d014e8f7150bf5de4df5518ef696).",
+          link: "https://gist.github.com/denniskigen/ff67d014e8f7150bf5de4df5518ef696",
+          description: "Follow the link to see my configuration settings.",
         },
         {
           name: "Night Owl (No Italics) theme",
