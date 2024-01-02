@@ -5,7 +5,7 @@ export default function Header() {
   const pathName = usePathname();
 
   return pathName !== "/" ? (
-    <header className="h-37.5px flex items-center justify-between my-12">
+    <header className="h-37.5px flex items-center justify-between mb-10">
       <Link
         className="flex items-center underline underline-offset-4 decoration-gray-500 text-slate-900 dark:text-white"
         href="/"

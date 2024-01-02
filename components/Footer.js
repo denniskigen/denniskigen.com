@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <div className="mt-24" />
       <hr />
-      <footer class="flex justify-between my-6">
+      <footer className="flex justify-between my-6">
         <span className="">Dennis Kigen</span>
         <div className="flex items-center gap-4">
           <ExternalLink href="mailto:kigen.work@gmail.com">
