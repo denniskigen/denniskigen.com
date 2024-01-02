@@ -5,20 +5,15 @@ import ExternalLink from "../components/ExternalLink";
 export default function BookShelf() {
   return (
     <Container title="Dennis Kigen - Bookshelf">
-      <article className="flex w-full flex-col items-start justify-center">
-        <h1 className="text-2xl text-slate-900 dark:text-slate-200 font-bold">
-          Bookshelf
-        </h1>
+      <article className="flex flex-col items-start justify-center w-full">
+        <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-200">Bookshelf</h1>
+        <p className="mt-8">The following is a list of books I'm currently reading for the first time or re-reading.</p>
         <p className="mt-8">
-          The following is a list of books I'm currently reading for the first
-          time or re-reading.
-        </p>
-        <p className="mt-8">
-          A few of the links below are affiliate links which means I get paid or
-          rewarded in some way if you use them to purchase.
+          A few of the links below are affiliate links which means I get paid or rewarded in some way if you use them to
+          purchase.
         </p>
         <div className="mt-6 space-y-10">
-          <ul className="mt-4 list-none space-y-6">
+          <ul className="mt-4 space-y-6 list-none">
             <li className="space-y-2">
               <ExternalLink
                 href="https://www.amazon.com/gp/product/0425284646/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0425284646&linkCode=as2&tag=denniskigen-20&linkId=f27fa4c2e30a4647b001d8c7192426f7"
@@ -26,17 +21,13 @@ export default function BookShelf() {
               >
                 Skin in the Game
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Nassim Taleb
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Nassim Taleb</span>
             </li>
             <li className="space-y-2">
               <ExternalLink href="https://amzn.to/3C78HyH" styles="underline">
                 Starting Strength
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Mark Rippetoe
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Mark Rippetoe</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -45,9 +36,7 @@ export default function BookShelf() {
               >
                 Zero to One
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Peter Thiel
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Peter Thiel</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -56,9 +45,7 @@ export default function BookShelf() {
               >
                 Antifragile: Things That Gain from Disorder
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Nassim Taleb
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Nassim Taleb</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -67,9 +54,7 @@ export default function BookShelf() {
               >
                 The Bed of Procrustes: Philosophical and Practical Aphorisms
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Nassim Taleb
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Nassim Taleb</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -78,9 +63,7 @@ export default function BookShelf() {
               >
                 Atomic Habits
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by James Clear
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by James Clear</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -89,9 +72,7 @@ export default function BookShelf() {
               >
                 Show Your Work
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Austin Kleon
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Austin Kleon</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -100,9 +81,7 @@ export default function BookShelf() {
               >
                 Tools of Titans
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Tim Ferriss
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Tim Ferriss</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -111,17 +90,13 @@ export default function BookShelf() {
               >
                 The Almanack of Naval Ravikant
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Eric Jorgenson
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Eric Jorgenson</span>
             </li>
             <li className="space-y-2">
               <ExternalLink href="https://sive.rs/n" styles="underline">
                 Hell Yeah or No
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Derek Sivers
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Derek Sivers</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -130,9 +105,7 @@ export default function BookShelf() {
               >
                 Deep Work
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Cal Newport
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Cal Newport</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -141,9 +114,7 @@ export default function BookShelf() {
               >
                 Founders at Work
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Jessica Livingston
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Jessica Livingston</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -152,9 +123,7 @@ export default function BookShelf() {
               >
                 Hackers and Painters
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Paul Graham
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Paul Graham</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -163,20 +132,13 @@ export default function BookShelf() {
               >
                 The Psychology of Money
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Morgan Housel
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Morgan Housel</span>
             </li>
             <li className="space-y-2">
-              <ExternalLink
-                href="https://www.learninpublic.org/"
-                styles="underline"
-              >
+              <ExternalLink href="https://www.learninpublic.org/" styles="underline">
                 The Coding Career Handbook
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Shawn 'Swyx' Wang
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Shawn 'Swyx' Wang</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -185,9 +147,7 @@ export default function BookShelf() {
               >
                 Working in Public
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Nadia Eghbal
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Nadia Eghbal</span>
             </li>
             <li className="space-y-2">
               <ExternalLink
@@ -196,32 +156,9 @@ export default function BookShelf() {
               >
                 Meditations
               </ExternalLink>{" "}
-              <span className="text-neutral-600 dark:text-slate-200">
-                by Marcus Aurelius
-              </span>
+              <span className="text-neutral-600 dark:text-slate-200">by Marcus Aurelius</span>
             </li>
           </ul>
-        </div>
-        <div className="flex items-center mt-12">
-          <svg
-            viewBox="0 0 3 6"
-            className="mr-3 w-auto h-1.5 text-slate-400 overflow-visible group-hover:text-slate-600 dark:group-hover:text-slate-300"
-          >
-            <path
-              d="M3 0L0 3L3 6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-          </svg>
-          <Link
-            className="text-slate-700 font-semibold flex items-center dark:text-slate-200"
-            href="/"
-          >
-            Return home
-          </Link>
         </div>
       </article>
     </Container>

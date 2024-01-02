@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Footer from "./Footer";
+import Header from "./Header";
 import Navbar from "./Navbar";
 
 export default function Container(props) {
@@ -38,6 +39,7 @@ export default function Container(props) {
       </Head>
       <Navbar />
       <main className="flex flex-col justify-center max-w-3xl px-8 py-16 mx-auto leading-7 xl:py-20 text-slate-900 dark:text-slate-200">
+        <Header />
         {children}
         <Footer />
       </main>
