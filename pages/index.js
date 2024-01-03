@@ -67,7 +67,7 @@ function About() {
       <p className="mt-8">
         Previously, I helped build{" "}
         <ExternalLink href="https://www.ampathkenya.org/pointofcare">
-          <span>AMPATH Point of Care</span>
+          <span>Point of Care</span>
         </ExternalLink>{" "}
         at{" "}
         <ExternalLink href="https://www.ampathkenya.org/">
