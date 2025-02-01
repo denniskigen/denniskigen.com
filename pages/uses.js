@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Container from "../components/Container";
 import ExternalLink from "../components/ExternalLink";
 
@@ -41,7 +40,7 @@ export default function Uses() {
         {
           name: "React",
           link: "https://beta.reactjs.org/",
-          description: "The most popular frontend framework in the world.",
+          description: "The most popular frontend framework.",
         },
         {
           name: "TypeScript",
@@ -84,17 +83,19 @@ export default function Uses() {
       title: "Editor",
       items: [
         {
-          name: "Visual Studio Code",
-          link: "https://gist.github.com/denniskigen/ff67d014e8f7150bf5de4df5518ef696",
-          description: "Follow the link to see my configuration settings.",
+          name: "Cursor",
+          link: "https://www.cursor.com",
+          description: "The best AI code editor.",
         },
         {
-          name: "Night Owl (No Italics) theme",
-          link: "https://aka.ms/nightowl",
-          description: "by Sarah Drasner.",
+          name: "GitHub Dark dimmed theme",
+          link: "https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme",
+          description: "My default theme for Cursor.",
         },
         {
-          name: "SF Mono font",
+          name: "Geist Mono font",
+          link: "https://vercel.com/font",
+          description: "My default font for Cursor.",
         },
       ],
     },
@@ -102,36 +103,40 @@ export default function Uses() {
       title: "Browser extensions",
       items: [
         {
+          name: "uBlock Origin",
+          link: "https://ublockorigin.com/",
+        },
+        {
           name: "1Password extension",
           link: "https://1password.com",
         },
         {
-          name: "Minimal Theme for X",
-          link: "https://addons.mozilla.org/en-US/firefox/addon/minimaltwitter/",
-        },
-        {
-          name: "Grammarly",
-          link: "https://grammarly.com",
-        },
-        {
-          name: "Honey",
-          link: "https://www.joinhoney.com",
+          name: "JSON Viewer",
+          link: "https://chromewebstore.google.com/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh",
         },
         {
           name: "OctoLinker",
           link: "https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp?hl=en",
         },
         {
+          name: "Perplexity - AI Search",
+          link: "https://chromewebstore.google.com/detail/perplexity-ai-search/bnaffjbjpgiagpondjlnneblepbdchol?hl=en",
+        },
+        {
           name: "React Developer Tools",
           link: "https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en",
         },
         {
-          name: "SWR Devtools",
-          link: "https://swr-devtools.vercel.app",
+          name: "React Scan",
+          link: "https://react-scan.million.dev",
         },
         {
-          name: "uBlock Origin",
-          link: "https://ublockorigin.com/",
+          name: "Refined GitHub",
+          link: "https://chromewebstore.google.com/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf",
+        },
+        {
+          name: "SWR Devtools",
+          link: "https://swr-devtools.vercel.app",
         },
       ],
     },
@@ -144,24 +149,19 @@ export default function Uses() {
           description: "Your last password manager",
         },
         {
-          name: "Firefox Developer Edition",
-          link: "https://www.mozilla.org/en-US/firefox/developer/",
+          name: "Arc",
+          link: "https://arc.net",
           description: "My default browser",
         },
         {
-          name: "Fig",
-          link: "https://fig.io",
-          description: "Terminal for developers",
+          name: "Claude 3.5 Sonnet",
+          link: "https://claude.ai",
+          description: "The best AI model for everything",
         },
         {
           name: "Figma",
           link: "https://figma.com",
           description: "The defacto tool for designing UIs",
-        },
-        {
-          name: "Grammarly",
-          link: "https://grammarly.com",
-          description: "Checks your spelling and grammar as you type",
         },
         {
           name: "Kap",
@@ -171,22 +171,17 @@ export default function Uses() {
         {
           name: "Lunar",
           link: "https://lunar.fyi/",
-          description: "The defacto app for controlling monitors",
+          description: "Control multiple monitors",
         },
         {
-          name: "Rectangle",
-          link: "https://rectangleapp.com/",
-          description: "Move and resize windows in macOS using keyboard shortcuts or snap areas",
-        },
-        {
-          name: "Notion",
-          link: "https://notion.so",
-          description: "All-in-one workspace",
+          name: "Obsidian",
+          link: "https://obsidian.md",
+          description: "Build your second brain",
         },
         {
           name: "Raycast",
           link: "https://raycast.com",
-          description: "Productivity app for macOS",
+          description: "Command center for your Mac",
         },
         {
           name: "Slack",
@@ -196,12 +191,17 @@ export default function Uses() {
         {
           name: "Spotify",
           link: "https://spotify.com",
-          description: "Music for coding",
+          description: "Music for everything",
+        },
+        {
+          name: "TablePlus",
+          link: "https://tableplus.com",
+          description: "My default database client",
         },
         {
           name: "Warp",
           link: "https://www.warp.dev/",
-          description: "Reimaged terminal",
+          description: "Reimagined terminal",
         },
         {
           name: "Zeplin",
@@ -235,13 +235,13 @@ export default function Uses() {
           link: "https://www.amazon.com/gp/product/B07PX8JMJV/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07PX8JMJV&linkCode=as2&tag=denniskigen-20&linkId=cc60a0f2b8ebcc9291f0b8a27840f34a",
         },
         {
-          name: "Keychron K3",
-          description: "Mechanical keyboard with Gateron Brown switches",
-          link: "https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard?variant=39319147074686",
+          name: "Keychron K3 Pro",
+          description: "QMK/VIA wireless custom mechanical keyboard with Gateron Brown switches",
+          link: "https://www.keychron.com/products/keychron-k3-pro-qmk-via-wireless-custom-mechanical-keyboard",
         },
         {
           name: "Logitech MX Master 3S",
-          description: "Great wireless mouse",
+          description: "The best wireless mouse",
           link: "https://www.amazon.com/Logitech-Master-Advanced-Wireless-Mouse/dp/B07S395RWD",
         },
         {
@@ -252,19 +252,23 @@ export default function Uses() {
           name: "iPhone 12 Pro",
           link: "https://www.amazon.com/Apple-iPhone-128GB-Pacific-Blue/dp/B08PMYLKVF",
         },
+        {
+          name: "Moleskine Notebook",
+          link: "https://www.moleskine.com/shop/notebooks/",
+        },
+        {
+          name: "Anker 737 Power Bank (PowerCore 24K)",
+          link: "https://www.anker.com/products/a1289?variant=41974285041814",
+        },
       ],
     },
   ];
 
   return (
     <Container title="Dennis Kigen - Uses">
-      <article className="flex flex-col items-start justify-center w-full text-balance">
+      <article className="flex flex-col justify-center items-start w-full text-balance">
         <h1 className="text-2xl font-bold">Uses</h1>
         <p className="mt-8">This page covers the different tools I use for my work.</p>
-        <p className="mt-8">
-          A few of the links below are affiliate links which means I get paid or rewarded in some way if you use them to
-          purchase, but rest assured these are all tools and services I actually use.
-        </p>
         <div className="mt-8 space-y-10">
           {sections.map((section, index) => (
             <Section key={index} title={section.title} items={section.items} />
