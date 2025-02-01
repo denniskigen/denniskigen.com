@@ -3,7 +3,7 @@ import ExternalLink from "./ExternalLink";
 export default function ProjectCard({ title, description, href, icon }) {
   return (
     <ExternalLink href={href} styles="mb-4">
-      <div className="flex items-center rounded-lg border border-gray-200 p-4 hover:border hover:shadow dark:border-gray-200 dark:hover:border-2">
+      <div className="flex items-center rounded-lg border border-gray-200 p-4 hover:border hover:shadow-sm dark:border-gray-200 dark:hover:border-2">
         {icon === "reactweather" && (
           <div className="ml-2 mr-4 h-8 w-8">
             <span className="sr-only">React Weather Next</span>

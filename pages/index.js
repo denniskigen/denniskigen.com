@@ -7,7 +7,7 @@ import avatar from "../public/dennis-avatar.png";
 export default function Home() {
   return (
     <Container>
-      <main className="flex flex-grow flex-col items-start justify-center">
+      <main className="flex grow flex-col items-start justify-center">
         <About />
         <Projects />
         <Ethos />

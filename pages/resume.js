@@ -5,7 +5,7 @@ import ExternalLink from "../components/ExternalLink";
 export default function Resume() {
   return (
     <Container title="Dennis Kigen - Resume">
-      <article className="flex flex-col items-start justify-center flex-grow">
+      <article className="flex flex-col items-start justify-center grow">
         <h1 className="text-lg font-bold text-slate-900 dark:text-slate-200">Resume</h1>
         <div className="min-w-full mt-8">
           <h2 className="text-xl font-medium">Relevant Professional Experience</h2>
