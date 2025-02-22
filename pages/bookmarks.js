@@ -60,9 +60,9 @@ export default function Bookmarks() {
               </ExternalLink>
             </li>
             <li className="space-y-2">
-              <ExternalLink href="https://www.bowtiedphys.io/p/foundational-health-protocol">Foundational Health</ExternalLink>
+              <ExternalLink href="https://www.bowtiedphys.io/p/foundational-health-protocol">Foundational Health Protocol</ExternalLink>
             </li>
-            <li className="space-y-2">
+             <li className="space-y-2">
               <ExternalLink href="https://www.bowtiedphys.io/p/btps-health-value-tool-stack">Health Value Tool Stack</ExternalLink>
             </li>
             <li className="space-y-2">
