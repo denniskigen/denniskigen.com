@@ -5,8 +5,7 @@ import ExternalLink from "../components/ExternalLink";
 export default function Bookmarks() {
   return (
     <Container
-      title="
-    Dennis Kigen - Bookmarks"
+      title="Dennis Kigen - Bookmarks"
     >
       <article className="flex flex-col items-start justify-center w-full">
         <h1 className="text-2xl font-bold">Bookmarks</h1>
@@ -59,6 +58,18 @@ export default function Bookmarks() {
               <ExternalLink href="https://kentcdodds.com/blog/write-fewer-longer-tests">
                 Write Fewer, Longer Tests
               </ExternalLink>
+            </li>
+            <li className="space-y-2">
+              <ExternalLink href="https://www.bowtiedphys.io/p/foundational-health-protocol">Foundational Health</ExternalLink>
+            </li>
+            <li className="space-y-2">
+              <ExternalLink href="https://www.bowtiedphys.io/p/btps-health-value-tool-stack">Health Value Tool Stack</ExternalLink>
+            </li>
+            <li className="space-y-2">
+              <ExternalLink href="https://blogmaverick.com/2012/03/18/dont-follow-your-passion-follow-your-effort/">Don't follow Your Passion, Follow Your Effort</ExternalLink>
+            </li>
+            <li className="space-y-2">
+              <ExternalLink href="https://wsparchive.substack.com/p/energy-is-passion-original">Energy is Passion</ExternalLink>
             </li>
           </ul>
         </div>
