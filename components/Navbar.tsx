@@ -1,9 +1,9 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 
-function Navbar() {
-  const [scrolled, setScrolled] = React.useState(false);
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
       if (isScrolled !== scrolled) {
@@ -14,7 +14,6 @@ function Navbar() {
     document.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-      // clean up the event handler when the component unmounts
       document.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
@@ -23,10 +22,8 @@ function Navbar() {
     <>
       <div
         data-active={scrolled}
-        className="sticky right-0 left-0 top-0 z-10 flex flex-col items-center backdrop-blur-sm h-16 opacity-95"
+        className="flex sticky top-0 right-0 left-0 z-10 justify-end items-center px-8 h-16 opacity-95 backdrop-blur-sm"
       ></div>
     </>
   );
 }
-
-export default Navbar;

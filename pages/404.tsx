@@ -8,7 +8,15 @@ export default function NotFound() {
         <h1 className="my-1 text-lg font-medium">404</h1>
         <h2 className="my-1 text-lg font-medium">Whoa there, Cowboy!</h2>
         <div className="my-8">
-          <Image src="/dance-off-cowboy.gif" alt="dancing cowboy" width="400" height="400" />
+          <Image 
+            src="/dance-off-cowboy.webp" 
+            alt="dancing cowboy" 
+            width="400" 
+            height="400"
+            priority={false}
+            placeholder="blur"
+            blurDataURL="data:image/webp;base64,UklGRnoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKhAACAAFAFwlOF0AAP4AAA=="
+          />
         </div>
         <p>
           You seem to have lost your way. How's about you click that darned big ol button below and skeddadle on home.

@@ -1,19 +1,45 @@
 import Container from "../components/Container";
 import ExternalLink from "../components/ExternalLink";
+import ExternalLinkIcon from "../components/ExternalLinkIcon";
 
-const Section = ({ title, items }) => (
+interface Item {
+  name: string;
+  link?: string;
+  description?: string;
+}
+
+interface SectionProps {
+  title: string;
+  items: Item[];
+}
+
+const Section = ({ title, items }: SectionProps) => (
   <div>
     <h2 className="text-lg font-bold">{title}</h2>
-    <ul className="mt-8 space-y-3 list-disc list-inside">
-      {items.map((item, index) => (
-        <li key={index} className="space-y-2">
-          <span className="font-medium">
-            {item.link ? <ExternalLink href={item.link}>{item.name}</ExternalLink> : item.name}
-          </span>
-          {item.description && <span> - {item.description}</span>}
-        </li>
+    <div className="mt-8 space-y-4">
+      {items.map((item) => (
+        <div key={item.name}>
+          <div className="font-medium">
+            {item.link ? (
+              <ExternalLink
+                href={item.link}
+                styles="!no-underline text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
+              >
+                <span className="flex gap-1 items-center">
+                  {item.name}
+                  <ExternalLinkIcon />
+                </span>
+              </ExternalLink>
+            ) : (
+              item.name
+            )}
+          </div>
+          {item.description && (
+            <div className="mt-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">{item.description}</div>
+          )}
+        </div>
       ))}
-    </ul>
+    </div>
   </div>
 );
 
@@ -88,13 +114,13 @@ export default function Uses() {
           description: "The best AI code editor.",
         },
         {
-          name: "GitHub Dark dimmed theme",
-          link: "https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme",
+          name: "Cursor Dark theme",
+          link: "https://docs.cursor.com/en/configuration/themes",
           description: "My default theme for Cursor.",
         },
         {
-          name: "Geist Mono font",
-          link: "https://vercel.com/font",
+          name: "JetBrains Mono font",
+          link: "https://www.jetbrains.com/lp/mono/",
           description: "My default font for Cursor.",
         },
       ],
@@ -105,38 +131,47 @@ export default function Uses() {
         {
           name: "uBlock Origin",
           link: "https://ublockorigin.com/",
+          description: "The most effective ad blocker that doesn't compromise on performance.",
         },
         {
           name: "1Password extension",
           link: "https://1password.com",
+          description: "Secure password manager with browser integration for seamless login.",
         },
         {
           name: "JSON Viewer",
           link: "https://chromewebstore.google.com/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh",
+          description: "Pretty-prints JSON responses in the browser for better debugging.",
         },
         {
           name: "OctoLinker",
           link: "https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp?hl=en",
+          description: "Makes code references in GitHub clickable for better navigation.",
         },
         {
           name: "Perplexity - AI Search",
           link: "https://chromewebstore.google.com/detail/perplexity-ai-search/bnaffjbjpgiagpondjlnneblepbdchol?hl=en",
+          description: "AI-powered search that provides comprehensive answers with sources.",
         },
         {
           name: "React Developer Tools",
           link: "https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en",
+          description: "Essential debugging tool for React applications and components.",
         },
         {
           name: "React Scan",
           link: "https://react-scan.million.dev",
+          description: "Identifies unnecessary re-renders in React applications for performance optimization.",
         },
         {
           name: "Refined GitHub",
           link: "https://chromewebstore.google.com/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf",
+          description: "Adds useful features and improvements to the GitHub interface.",
         },
         {
           name: "SWR Devtools",
           link: "https://swr-devtools.vercel.app",
+          description: "Debug and monitor SWR data fetching in React applications.",
         },
       ],
     },
@@ -149,14 +184,19 @@ export default function Uses() {
           description: "Your last password manager",
         },
         {
-          name: "Arc",
-          link: "https://arc.net",
+          name: "Comet",
+          link: "https://perplexity.ai/comet",
           description: "My default browser",
         },
         {
-          name: "Claude 3.5 Sonnet",
+          name: "Claude Sonnet 4",
           link: "https://claude.ai",
           description: "The best AI model for everything",
+        },
+        {
+          name: "Claude Code",
+          link: "https://claude.ai/code",
+          description: "The best AI model for coding",
         },
         {
           name: "Figma",
@@ -172,11 +212,6 @@ export default function Uses() {
           name: "Lunar",
           link: "https://lunar.fyi/",
           description: "Control multiple monitors",
-        },
-        {
-          name: "Obsidian",
-          link: "https://obsidian.md",
-          description: "Build your second brain",
         },
         {
           name: "Raycast",
@@ -220,14 +255,16 @@ export default function Uses() {
       items: [
         {
           name: "Motorized standing desk",
+          description: "Adjustable height desk for better posture and movement throughout the day.",
         },
         {
           name: "Ergonomic chair",
+          description: "Supportive seating designed for long hours of focused work.",
         },
         {
-          name: '14" MacBook Pro (2021)',
-          link: "https://www.apple.com/shop/buy-mac/macbook-pro/14-inch",
-          description: "10 Core M1 Pro / 16 GB RAM / 512 GB SSD",
+          name: '14" MacBook Pro (2024)',
+          link: "https://www.apple.com/macbook-pro/",
+          description: "14 Core M4 Max / 14 Core GPU / 36 GB RAM / 1 TB SSD",
         },
         {
           name: "LG 27UL550-W and LG 27UN850-W",
@@ -247,18 +284,22 @@ export default function Uses() {
         {
           name: "Apple Airpods Pro",
           link: "https://www.apple.com/airpods-pro/",
+          description: "Wireless earbuds with active noise cancellation for focused work and calls.",
         },
         {
-          name: "iPhone 12 Pro",
-          link: "https://www.amazon.com/Apple-iPhone-128GB-Pacific-Blue/dp/B08PMYLKVF",
+          name: "iPhone 15 Pro",
+          link: "https://www.apple.com/iphone-15-pro/",
+          description: "Primary mobile device for communication and on-the-go productivity.",
         },
         {
           name: "Moleskine Notebook",
           link: "https://www.moleskine.com/shop/notebooks/",
+          description: "Physical notebook for sketching ideas, taking notes, and planning.",
         },
         {
           name: "Anker 737 Power Bank (PowerCore 24K)",
           link: "https://www.anker.com/products/a1289?variant=41974285041814",
+          description: "High-capacity portable charger for extended mobile device usage.",
         },
       ],
     },
@@ -270,8 +311,8 @@ export default function Uses() {
         <h1 className="text-2xl font-bold">Uses</h1>
         <p className="mt-8">This page covers the different tools I use for my work.</p>
         <div className="mt-8 space-y-10">
-          {sections.map((section, index) => (
-            <Section key={index} title={section.title} items={section.items} />
+          {sections.map((section) => (
+            <Section key={section.title} title={section.title} items={section.items} />
           ))}
         </div>
       </article>

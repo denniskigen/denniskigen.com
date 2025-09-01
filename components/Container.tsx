@@ -1,21 +1,40 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { ReactNode } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Navbar from "./Navbar";
 
-export default function Container(props) {
-  const { children, ...customMeta } = props;
+interface ContainerProps {
+  children: ReactNode;
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: string;
+  date?: string;
+}
+
+export default function Container({
+  children,
+  title,
+  description,
+  image,
+  type,
+  date,
+  ...customMeta
+}: ContainerProps) {
   const router = useRouter();
   const meta = {
-    title: "Dennis Kigen",
-    description: `Software Craftsman. Frontend Engineer.`,
-    type: "website",
+    title: title || "Dennis Kigen",
+    description: description || `Software Craftsman. Frontend Engineer.`,
+    type: type || "website",
+    image,
+    date,
     ...customMeta,
   };
 
   return (
-    <div className={"min-h-screen mx-auto antialiased bg-white dark:bg-stone-900"}>
+    <div className="mx-auto min-h-screen antialiased bg-white dark:bg-stone-900">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -38,7 +57,7 @@ export default function Container(props) {
         {meta.date && <meta property="article:published_time" content={meta.date} />}
       </Head>
       <Navbar />
-      <main className="flex flex-col justify-center max-w-3xl px-8 py-16 mx-auto leading-7 xl:py-20 text-slate-900 dark:text-slate-200">
+      <main className="flex flex-col justify-center px-8 py-16 mx-auto max-w-3xl leading-7 xl:py-20 text-slate-900 dark:text-slate-200">
         <Header />
         {children}
         <Footer />

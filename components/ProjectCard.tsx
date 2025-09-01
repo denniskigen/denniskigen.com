@@ -1,6 +1,13 @@
 import ExternalLink from "./ExternalLink";
 
-export default function ProjectCard({ title, description, href, icon }) {
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  href: string;
+  icon: "reactweather" | "ampathforms";
+}
+
+export default function ProjectCard({ title, description, href, icon }: ProjectCardProps) {
   return (
     <ExternalLink href={href} styles="mb-4">
       <div className="flex items-center rounded-lg border border-gray-200 p-4 hover:border hover:shadow-sm dark:border-gray-200 dark:hover:border-2">

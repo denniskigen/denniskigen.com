@@ -1,13 +1,12 @@
-import Link from "next/link";
 import Container from "../components/Container";
 import ExternalLink from "../components/ExternalLink";
 
 export default function Resume() {
   return (
     <Container title="Dennis Kigen - Resume">
-      <article className="flex flex-col items-start justify-center grow">
+      <article className="flex flex-col justify-center items-start grow">
         <h1 className="text-lg font-bold text-slate-900 dark:text-slate-200">Resume</h1>
-        <div className="min-w-full mt-8">
+        <div className="mt-8 min-w-full">
           <h2 className="text-xl font-medium">Relevant Professional Experience</h2>
           <div className="mt-6">
             <div className="flex justify-between">
@@ -100,7 +99,7 @@ export default function Resume() {
             </div>
           </div>
         </div>
-        <div className="min-w-full mt-8">
+        <div className="mt-8 min-w-full">
           <h2 className="text-xl font-medium">Education</h2>
           <div className="flex justify-between mt-6">
             <div>
@@ -111,9 +110,9 @@ export default function Resume() {
             <h2>May 2015</h2>
           </div>
         </div>
-        <div className="min-w-full mt-8">
+        <div className="mt-8 min-w-full">
           <h2 className="text-xl font-medium">Tech Stack</h2>
-          <section className="min-w-full mt-6">
+          <section className="mt-6 min-w-full">
             <h3>Programming languages and frameworks</h3>
             <div className="flex space-x-10 mt-1.5">
               <ul className="flex-1 mx-4 mt-1 list-disc">
@@ -134,7 +133,7 @@ export default function Resume() {
               </ul>
             </div>
           </section>
-          <section className="min-w-full mt-4">
+          <section className="mt-4 min-w-full">
             <h3>Testing tools</h3>
             <div className="flex space-x-10 mt-1.5">
               <ul className="flex-1 mx-4 mt-1 list-disc">
@@ -144,7 +143,7 @@ export default function Resume() {
               </ul>
             </div>
           </section>
-          <section className="min-w-full mt-4">
+          <section className="mt-4 min-w-full">
             <h3>Frontend tooling</h3>
             <div className="flex space-x-10 mt-1.5">
               <ul className="flex-1 mx-4 mt-1 list-disc">
@@ -160,7 +159,7 @@ export default function Resume() {
               </ul>
             </div>
           </section>
-          <section className="min-w-full mt-4">
+          <section className="mt-4 min-w-full">
             <h3>Design systems and tools</h3>
             <div className="flex space-x-10 mt-1.5">
               <ul className="flex-1 mx-4 mt-1 list-disc">
@@ -174,7 +173,7 @@ export default function Resume() {
               </ul>
             </div>
           </section>
-          <section className="min-w-full mt-4">
+          <section className="mt-4 min-w-full">
             <h3>Databases & CI/CD</h3>
             <div className="flex space-x-10 mt-1.5">
               <ul className="flex-1 mx-4 mt-1 list-disc">
