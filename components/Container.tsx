@@ -67,7 +67,7 @@ export default function Container({
         {meta.date && <meta property="article:published_time" content={meta.date} />}
       </Head>
       <Navbar />
-      <main className="flex flex-col justify-center px-8 py-16 mx-auto max-w-3xl leading-7 xl:py-20 text-slate-900 dark:text-slate-200">
+      <main className="flex flex-col justify-center px-8 py-16 mx-auto max-w-3xl text-[17px] leading-7 xl:py-20 text-slate-900 dark:text-slate-200">
         <Header />
         {children}
         <Footer />

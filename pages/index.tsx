@@ -30,7 +30,6 @@ export default function Home() {
         <About />
         <Projects />
         <Ethos />
-        <Now />
         <Current />
         <Connect />
       </div>
@@ -80,9 +79,9 @@ function About() {
       <p className="mt-8">
         Previously built{" "}
         <ExternalLink href="https://www.ampathkenya.org/pointofcare">
-          <span>AMPATH Point of Care</span>
+          <span>Point of Care</span>
         </ExternalLink>
-        , the tablet-and-desktop EMR used across more than 26 major{" "}
+        , a tablet-and-desktop EMR used across more than 26 major{" "}
         <ExternalLink href="https://www.ampathkenya.org/">
           <span>AMPATH</span>
         </ExternalLink>{" "}
@@ -139,18 +138,6 @@ function Projects() {
   );
 }
 
-function Now() {
-  return (
-    <div className="mt-12">
-      <h2 className="text-lg font-bold text-slate-900 dark:text-slate-200">Now</h2>
-      <p className="mt-8">
-        Focused on making OpenMRS 3.x more reliable and approachable for implementers, while mentoring contributors and
-        refining documentation.
-      </p>
-    </div>
-  );
-}
-
 function Ethos() {
   return (
     <div className="mt-12">
@@ -170,7 +157,11 @@ function Ethos() {
 function Current() {
   return (
     <div className="mt-12">
-      <h2 className="text-lg font-bold dark:text-slate-200 text-slate-900">Present</h2>
+      <h2 className="text-lg font-bold dark:text-slate-200 text-slate-900">Now</h2>
+      <p className="mt-8">
+        Focused on making OpenMRS 3.x more reliable and approachable for implementers, while mentoring contributors and
+        refining documentation.
+      </p>
       <p className="mt-8">
         Building fast, polished clinical software for OpenMRS 3.x—shipping UI improvements, platform tooling, and
         documentation that help teams deliver patient-facing workflows at scale. I build with React and TypeScript, and
