@@ -94,7 +94,7 @@ function About() {
 function Projects() {
   const projects: Project[] = [
     {
-      title: "OpenMRS 3.x",
+      title: "OpenMRS 3",
       url: "https://dev3.openmrs.org/openmrs/spa",
       description:
         "Building the new frontend for the world's most popular open-source electronic health records system.",
@@ -159,11 +159,11 @@ function Current() {
     <div className="mt-12">
       <h2 className="text-lg font-bold dark:text-slate-200 text-slate-900">Now</h2>
       <p className="mt-8">
-        Focused on making OpenMRS 3.x more reliable and approachable for implementers, while mentoring contributors and
-        refining documentation.
+        Focused on making O3 more reliable and approachable for implementers, while mentoring contributors and refining
+        documentation.
       </p>
       <p className="mt-8">
-        Building fast, polished clinical software for OpenMRS 3.x—shipping UI improvements, platform tooling, and
+        Building fast, polished clinical software for O3—shipping new features, UI improvements, platform tooling, and
         documentation that help teams deliver patient-facing workflows at scale. I build with React and TypeScript, and
         I lean on Vitest, Playwright, and other modern development tools to keep releases stable and reliable.
       </p>
