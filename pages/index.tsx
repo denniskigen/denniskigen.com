@@ -18,7 +18,9 @@ const ProjectCard = ({ project }: { project: Project }) => (
         {project.title}
         <ExternalLinkIcon />
       </h3>
-      <p className="mt-2.5 text-slate-900 dark:text-slate-200">{project.description}</p>
+      <p className="mt-2.5 text-base font-normal leading-6 text-slate-700 dark:text-slate-300">
+        {project.description}
+      </p>
     </div>
   </ExternalLink>
 );
@@ -117,7 +119,7 @@ function Projects() {
     {
       title: "AMPATH Forms",
       url: "https://ampath-forms.vercel.app",
-      description: "Documenting how to build, test and validate form schemas for OpenMRS.",
+      description: "Documenting how to build, test and validate OpenMRS form schemas.",
     },
     {
       title: "React Weather",
