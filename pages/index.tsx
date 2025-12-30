@@ -13,7 +13,7 @@ interface Project {
 
 const ProjectCard = ({ project }: { project: Project }) => (
   <ExternalLink href={project.url} styles="!no-underline">
-    <div className="relative flex-col p-4 h-full bg-white border border-gray-200 transition-all cursor-pointer group dark:border-gray-600 dark:bg-gray-800 hover:border-gray-300 dark:hover:border-gray-500">
+    <div className="relative flex-col p-4 h-full bg-white border border-gray-200 transition-all cursor-pointer group dark:border-slate-700 dark:bg-slate-800 hover:border-gray-300 dark:hover:border-slate-600">
       <h3 className="flex gap-1 items-center text-base font-semibold text-blue-700 transition-colors dark:text-blue-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
         {project.title}
         <ExternalLinkIcon />
@@ -25,11 +25,12 @@ const ProjectCard = ({ project }: { project: Project }) => (
 
 export default function Home() {
   return (
-    <Container>
+    <Container description="Frontend engineer building user interfaces and open-source health software.">
       <div className="flex flex-col justify-center items-start grow">
         <About />
         <Projects />
         <Ethos />
+        <Now />
         <Current />
         <Connect />
       </div>
@@ -47,15 +48,16 @@ function About() {
           src={avatar}
           height={128}
           width={128}
+          sizes="96px"
           priority={true}
           placeholder="blur"
         />
         <div className="flex-col ml-2 space-y-1 font-medium align-middle dark:text-slate-200">
           <h1 className="text-2xl font-bold">Dennis Kigen</h1>
-          <h2 className="hidden text-sm sm:inline dark:text-slate-300 text-slate-700">
+          <p className="hidden text-sm sm:inline dark:text-slate-300 text-slate-700">
             Software Craftsman. Frontend Engineer
-          </h2>
-          <h2 className="inline text-sm sm:hidden dark:text-slate-300 text-slate-700">Frontend Engineer</h2>
+          </p>
+          <p className="inline text-sm sm:hidden dark:text-slate-300 text-slate-700">Frontend Engineer</p>
         </div>
       </div>
 
@@ -64,27 +66,27 @@ function About() {
       </svg>
 
       <p className="my-8">
-        Frontend Engineer crafting user interfaces. Interested in crafting magical web experiences, DX, documentation,
-        and shipping maintainable code.
+        Frontend engineer building user interfaces. Interested in magical web experiences, DX, documentation, and
+        shipping maintainable code.
       </p>
 
       <p className="my-8">
-        Currently building the future of open-source electronic medical records software for the developing world at{" "}
+        Currently helping build and scale O3, the open-source EMR for the developing world at{" "}
         <ExternalLink href="https://openmrs.org/">
           <span>OpenMRS</span>
         </ExternalLink>
         .
       </p>
       <p className="mt-8">
-        Previously, I helped build{" "}
+        Previously built{" "}
         <ExternalLink href="https://www.ampathkenya.org/pointofcare">
-          <span>Point of Care</span>
-        </ExternalLink>{" "}
-        at{" "}
+          <span>AMPATH Point of Care</span>
+        </ExternalLink>
+        , the tablet-and-desktop EMR used across more than 26 major{" "}
         <ExternalLink href="https://www.ampathkenya.org/">
           <span>AMPATH</span>
-        </ExternalLink>
-        .
+        </ExternalLink>{" "}
+        sites in Kenya with over 220,000 patients registered and millions of encounters and observations logged.
       </p>
     </div>
   );
@@ -104,9 +106,9 @@ function Projects() {
       description: "Documentation site for O3, the frontend framework for OpenMRS.",
     },
     {
-      title: "OpenMRS Core Frontend",
+      title: "O3 Core Frontend",
       url: "https://github.com/openmrs/openmrs-esm-core",
-      description: "Core logic for the O3 frontend",
+      description: "Core frontend framework for O3.",
     },
     {
       title: "O3 Form Builder",
@@ -137,18 +139,29 @@ function Projects() {
   );
 }
 
+function Now() {
+  return (
+    <div className="mt-12">
+      <h2 className="text-lg font-bold text-slate-900 dark:text-slate-200">Now</h2>
+      <p className="mt-8">
+        Focused on making OpenMRS 3.x more reliable and approachable for implementers, while mentoring contributors and
+        refining documentation.
+      </p>
+    </div>
+  );
+}
+
 function Ethos() {
   return (
     <div className="mt-12">
       <h2 className="text-lg font-bold text-slate-900 dark:text-slate-200">Ethos</h2>
       <p className="mt-8">
-        Focused on <em>learning</em> and <em>building</em>. Relentlessly devoted to fine, detailed polish. Deriving joy
-        in novel interface experiences and design. Passionate about scaling myself through writing clear and inviting
-        documentation.
+        Focused on learning and building. I care about small details, durable UX, and interfaces that feel calm and
+        intentional. I scale my impact through clear, welcoming documentation.
       </p>
       <p className="mt-4">
-        In pursuit of crafting experiences that both delight and inspire users. Mindful of my time and attention so that
-        I can produce quality work and feel productive.
+        I aim to ship work that helps teams move faster without sacrificing quality, and I protect focus so the craft
+        stays sharp.
       </p>
     </div>
   );
@@ -159,22 +172,20 @@ function Current() {
     <div className="mt-12">
       <h2 className="text-lg font-bold dark:text-slate-200 text-slate-900">Present</h2>
       <p className="mt-8">
-        Building fast, polished software for the web using modern features in JavaScript, HTML and CSS. Betting my
-        future on React and Next.js for user interfaces. Setting my stall out on Tailwind for styling and TypeScript for
-        type safety. Experimenting with Vite and Turbo for tooling and Zustand for state management. Loving Nextra for
-        documentation and SWR for data fetching. Reaching for Testing Library, Jest, Vitest, MSW and Playwright for
-        testing components. Curious about tRPC, Astro, Svelte and Prisma.
+        Building fast, polished clinical software for OpenMRS 3.x—shipping UI improvements, platform tooling, and
+        documentation that help teams deliver patient-facing workflows at scale. I build with React and TypeScript, and
+        I lean on Vitest, Playwright, and other modern development tools to keep releases stable and reliable.
       </p>
       <p className="mt-8">
         <Link
-          className="!no-underline text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          className="underline underline-offset-[6px] font-medium decoration-slate-500 text-slate-900 dark:text-white"
           href="/bookshelf"
         >
           Reading
         </Link>{" "}
         and{" "}
         <Link
-          className="!no-underline text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          className="underline underline-offset-[6px] font-medium decoration-slate-500 text-slate-900 dark:text-white"
           href="/bookmarks"
         >
           bookmarking
@@ -184,7 +195,7 @@ function Current() {
       <p className="mt-8">
         Curious about how I work? Check out my{" "}
         <Link
-          className="!no-underline text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          className="underline underline-offset-[6px] font-medium decoration-slate-500 text-slate-900 dark:text-white"
           href="/uses"
         >
           uses
@@ -200,8 +211,7 @@ function Connect() {
     <div className="mt-12">
       <h2 className="text-lg font-bold dark:text-slate-200 text-slate-900">Connect</h2>
       <p className="mt-8">
-        Reach me at <ExternalLink href="https://twitter.com/dennisforthewin">@dennisforthewin</ExternalLink> or{" "}
-        <ExternalLink href="mailto:kigen.work@gmail.com">kigen.work@gmail.com</ExternalLink>
+        If you{"'"}re in Eldoret, let{"'"}s go for a walk.
       </p>
     </div>
   );

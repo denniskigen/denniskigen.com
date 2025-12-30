@@ -19,7 +19,10 @@ const Section = ({ title, items }: SectionProps) => (
     <div className="mt-8 space-y-4">
       {items.map((item) => (
         <div key={item.name}>
-          <div className="font-medium">
+          <div
+            className="font-medium"
+            style={{ fontFamily: "\"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif" }}
+          >
             {item.link ? (
               <ExternalLink
                 href={item.link}
@@ -34,9 +37,7 @@ const Section = ({ title, items }: SectionProps) => (
               item.name
             )}
           </div>
-          {item.description && (
-            <div className="mt-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">{item.description}</div>
-          )}
+          {item.description && <div className="mt-1 text-base leading-relaxed">{item.description}</div>}
         </div>
       ))}
     </div>
@@ -71,7 +72,7 @@ export default function Uses() {
         {
           name: "TypeScript",
           link: "https://typescriptlang.org",
-          description: "Type-safety for JavaScript. I use it for almost all my projects.",
+          description: "Type safety for JavaScript. I use it for almost all my projects.",
         },
         {
           name: "Testing Library",
@@ -96,12 +97,12 @@ export default function Uses() {
         {
           name: "TailwindCSS",
           link: "https://tailwindcss.com",
-          description: "The defacto API for styling. Great DX.",
+          description: "The de facto API for styling. Great DX.",
         },
         {
           name: "shadcn/ui",
           link: "https://ui.shadcn.com",
-          description: "Reusable UI components that you can copy and paste directly into your applications",
+          description: "Reusable UI components that you can copy and paste directly into your applications.",
         },
       ],
     },
@@ -181,17 +182,17 @@ export default function Uses() {
         {
           name: "1Password",
           link: "https://1password.com",
-          description: "Your last password manager",
+          description: "Your last password manager.",
         },
         {
           name: "Comet",
           link: "https://perplexity.ai/comet",
-          description: "My default browser",
+          description: "My default browser.",
         },
         {
           name: "Claude Sonnet 4",
           link: "https://claude.ai",
-          description: "The best AI model for everything",
+          description: "My go-to AI model.",
         },
         {
           name: "Claude Code",
@@ -201,52 +202,57 @@ export default function Uses() {
         {
           name: "Figma",
           link: "https://figma.com",
-          description: "The defacto tool for designing UIs",
+          description: "The de facto tool for designing UIs.",
         },
         {
           name: "Kap",
           link: "https://getkap.co",
-          description: "An open-source screen recorder built with web technology",
+          description: "An open-source screen recorder built with web technology.",
         },
         {
           name: "Lunar",
           link: "https://lunar.fyi/",
-          description: "Control multiple monitors",
+          description: "Control multiple monitors.",
+        },
+        {
+          name: "Obsidian",
+          link: "https://obsidian.md",
+          description: "Build your second brain.",
         },
         {
           name: "Raycast",
           link: "https://raycast.com",
-          description: "Command center for your Mac",
+          description: "Command center for your Mac.",
         },
         {
           name: "Slack",
-          link: "https://github.com",
-          description: "Comms for remote teams",
+          link: "https://slack.com",
+          description: "Comms for remote teams.",
         },
         {
           name: "Spotify",
           link: "https://spotify.com",
-          description: "Music for everything",
+          description: "Music for everything.",
         },
         {
           name: "TablePlus",
           link: "https://tableplus.com",
-          description: "My default database client",
+          description: "My default database client.",
         },
         {
           name: "Warp",
           link: "https://www.warp.dev/",
-          description: "Reimagined terminal",
+          description: "Reimagined terminal.",
         },
         {
           name: "Zeplin",
           link: "https://zeplin.io",
-          description: "Design handoff",
+          description: "Design handoff.",
         },
         {
           name: "Zoom",
           link: "https://zoom.us",
-          description: "Video conferencing",
+          description: "Video conferencing.",
         },
       ],
     },
@@ -306,7 +312,7 @@ export default function Uses() {
   ];
 
   return (
-    <Container title="Dennis Kigen - Uses">
+    <Container title="Dennis Kigen - Uses" description="Tools, services, and gear I use for work.">
       <article className="flex flex-col justify-center items-start w-full text-balance">
         <h1 className="text-2xl font-bold">Uses</h1>
         <p className="mt-8">This page covers the different tools I use for my work.</p>

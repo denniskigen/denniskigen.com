@@ -43,7 +43,7 @@ const BookmarkLink = ({ bookmark }: { bookmark: Bookmark }) => (
     href={bookmark.url}
     styles="!no-underline text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
   >
-    <span className="flex gap-1 items-center">
+    <span className="flex items-center gap-1 py-1.5 font-semibold hover:underline underline-offset-4">
       {bookmark.title}
       <ExternalLinkIcon />
     </span>
@@ -52,12 +52,15 @@ const BookmarkLink = ({ bookmark }: { bookmark: Bookmark }) => (
 
 export default function Bookmarks() {
   return (
-    <Container title="Dennis Kigen - Bookmarks">
+    <Container
+      title="Dennis Kigen - Bookmarks"
+      description="A curated list of links on software, productivity, and thinking."
+    >
       <article className="flex flex-col justify-center items-start w-full">
         <h1 className="text-2xl font-bold">Bookmarks</h1>
-        <p className="mt-8">A bunch of curated links I've collected on my journeys across the interwebs.</p>
+        <p className="mt-8">A curated list of links I{"'"}ve collected around the web.</p>
         <div className="mt-6 mb-16">
-          <div className="mt-4 space-y-6">
+          <div className="mt-4 space-y-4">
             {bookmarks.map((bookmark) => (
               <div key={bookmark.title}>
                 <BookmarkLink bookmark={bookmark} />

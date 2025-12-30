@@ -5,6 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        display: ["var(--font-bricolage)", "var(--font-geist-sans)"],
         sans: ["var(--font-geist-sans)"],
       },
     },

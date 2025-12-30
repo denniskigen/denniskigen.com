@@ -2,7 +2,7 @@ interface ExternalLinkIconProps {
   className?: string;
 }
 
-export default function ExternalLinkIcon({ className = "w-3 h-3 opacity-60 transition-opacity group-hover:opacity-100" }: ExternalLinkIconProps) {
+export default function ExternalLinkIcon({ className = "w-4 h-4 opacity-60 transition-opacity group-hover:opacity-100" }: ExternalLinkIconProps) {
   return (
     <svg className={className} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
       <path

@@ -1,9 +1,10 @@
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState, useCallback, useRef } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { ArrowLeftIcon } from "@radix-ui/react-icons";
 
 export default function Header() {
-  const pathName = usePathname();
+  const { pathname } = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
@@ -11,7 +12,7 @@ export default function Header() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
-    
+
     timeoutRef.current = setTimeout(() => {
       const scrolled = window.scrollY > 50;
       setIsScrolled(scrolled);
@@ -28,21 +29,20 @@ export default function Header() {
     };
   }, [handleScroll]);
 
-  return pathName !== "/" ? (
+  return pathname !== "/" ? (
     <header
-      className={`h-37.5px flex items-center justify-between mb-10 transition-all duration-200 ${
+      className={`h-[37.5px] flex items-center justify-between mb-10 transition-all duration-200 ${
         isScrolled
-          ? "sticky top-0 z-50 bg-white dark:bg-stone-900 border-b border-gray-200 dark:border-gray-700 px-2 py-4"
+          ? "sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-700 px-2 py-4"
           : ""
       }`}
     >
       <Link
-        className="flex items-center no-underline text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+        className="inline-flex gap-2 items-center font-medium text-blue-700 transition-colors hover:text-blue-600 dark:text-blue-300 dark:hover:text-blue-200"
         href="/"
       >
-        <span className="flex items-center gap-1">
-          <p>← back</p>
-        </span>
+        <ArrowLeftIcon width={18} height={18} />
+        <span>Back</span>
       </Link>
     </header>
   ) : null;

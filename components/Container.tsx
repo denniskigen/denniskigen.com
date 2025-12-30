@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
+import { useTheme } from "next-themes";
 import Footer from "./Footer";
 import Header from "./Header";
 import Navbar from "./Navbar";
@@ -24,25 +25,34 @@ export default function Container({
   ...customMeta
 }: ContainerProps) {
   const router = useRouter();
+  const { resolvedTheme } = useTheme();
   const meta = {
-    title: title || "Dennis Kigen",
-    description: description || `Software Craftsman. Frontend Engineer.`,
-    type: type || "website",
-    image,
+    title: title ?? "Dennis Kigen",
+    description: description ?? "Software Craftsman. Frontend Engineer.",
+    type: type ?? "website",
+    image: image ?? "https://denniskigen.com/dennis-avatar.webp",
     date,
     ...customMeta,
   };
 
+  useEffect(() => {
+    const themeColor = resolvedTheme === "dark" ? "#0c0a09" : "#ffffff";
+    const metaTag = document.querySelector('meta[name="theme-color"]');
+    if (metaTag) {
+      metaTag.setAttribute("content", themeColor);
+    }
+  }, [resolvedTheme]);
+
   return (
-    <div className="mx-auto min-h-screen antialiased bg-white dark:bg-stone-900">
+    <div className="mx-auto min-h-screen antialiased bg-white dark:bg-slate-900">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
         <meta property="og:url" content={`https://denniskigen.com${router.asPath}`} />
         <link rel="canonical" href={`https://denniskigen.com${router.asPath}`} />
-        <link rel="icon" type="image/png" href="favicon.ico?v=1" />
-        <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1" />
+        <link rel="icon" type="image/png" href="/favicon.ico?v=1" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

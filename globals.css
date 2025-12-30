@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  button[data-state="dark"] {
+    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.6);
+  }
+
+  button[data-state="light"] {
+    box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.4);
+  }
+}
