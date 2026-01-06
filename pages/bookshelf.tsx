@@ -46,11 +46,25 @@ const books: Book[] = [
     isbn: "1430210788",
   },
   {
-    title: "Hackers and Painters",
+    title: "Hackers & Painters: Big Ideas from the Computer Age",
     author: "Paul Graham",
     url: "https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554",
     category: "Tech",
     isbn: "1449389554",
+  },
+  {
+    title: "Accelerate",
+    author: "Nicole Forsgren",
+    url: "https://www.amazon.com/s?k=Accelerate+Nicole+Forsgren",
+    category: "Tech",
+    isbn: "9781942788331",
+  },
+  {
+    title: "How to Make a Few Billion Dollars",
+    author: "Brad Jacobs",
+    url: "https://www.amazon.com/s?k=How+to+Make+a+Few+Billion+Dollars+Brad+Jacobs",
+    category: "Business",
+    isbn: "9798886451740",
   },
   {
     title: "Hell Yeah or No",
@@ -67,6 +81,20 @@ const books: Book[] = [
     category: "Philosophy",
     isbn: "0812968255",
     description: "Personal reflections on Stoic philosophy and practical wisdom for living a virtuous life.",
+  },
+  {
+    title: "Gödel, Escher, Bach: An Eternal Golden Braid",
+    author: "Douglas R. Hofstadter",
+    url: "https://www.amazon.com/s?k=Godel+Escher+Bach+An+Eternal+Golden+Braid",
+    category: "Philosophy",
+    isbn: "9780465026562",
+  },
+  {
+    title: "The Lessons of History",
+    author: "Will Durant and Ariel Durant",
+    url: "https://www.amazon.com/s?k=The+Lessons+of+History+Will+Durant",
+    category: "Philosophy",
+    isbn: "9781439149959",
   },
   {
     title: "Show Your Work",
@@ -92,6 +120,13 @@ const books: Book[] = [
     category: "Health",
     isbn: "0982522738",
     description: "The definitive guide to basic barbell training and building foundational strength.",
+  },
+  {
+    title: "The 7 Habits of Highly Effective People",
+    author: "Stephen R. Covey",
+    url: "https://www.amazon.com/s?k=The+7+Habits+of+Highly+Effective+People+Stephen+R.+Covey",
+    category: "Business",
+    isbn: "9781982137274",
   },
   {
     title: "The 5 Types of Wealth",
@@ -131,6 +166,13 @@ const books: Book[] = [
     description: "Essential thinking tools for better decision-making and understanding complex systems.",
   },
   {
+    title: "The Millionaire Fastlane",
+    author: "MJ DeMarco",
+    url: "https://www.amazon.com/s?k=The+Millionaire+Fastlane+MJ+DeMarco",
+    category: "Business",
+    isbn: "9780984358106",
+  },
+  {
     title: "The Psychology of Money",
     author: "Morgan Housel",
     url: "https://www.amazon.com/Psychology-Money-hardback-Timeless-happiness/dp/0857199099",
@@ -144,6 +186,20 @@ const books: Book[] = [
     url: "https://www.amazon.com/Tools-Titans-Billionaires-World-Class-Performers/dp/1328683788",
     category: "Business",
     isbn: "1328683788",
+  },
+  {
+    title: "You Can Just Do Things",
+    author: "Jay Yang",
+    url: "https://www.amazon.com/s?k=You+Can+Just+Do+Things+Jay+Yang",
+    category: "Business",
+    isbn: "9798992459203",
+  },
+  {
+    title: "How to Win at Chess: The Ultimate Guide for Beginners and Beyond",
+    author: "Levy Rozman",
+    url: "https://www.amazon.com/s?k=How+to+Win+at+Chess+Levy+Rozman",
+    category: "Philosophy",
+    isbn: "9781984862075",
   },
   {
     title: "Working in Public",

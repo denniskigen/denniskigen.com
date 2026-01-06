@@ -28,6 +28,7 @@ const bookmarks: Bookmark[] = [
   { title: "Energy is Passion", url: "https://wsparchive.substack.com/p/energy-is-passion-original" },
   { title: "Foundational Health Protocol", url: "https://www.bowtiedphys.io/p/foundational-health-protocol" },
   { title: "Health Value Tool Stack", url: "https://www.bowtiedphys.io/p/btps-health-value-tool-stack" },
+  { title: "123 Health Hacks To Take With You Into 2026", url: "https://www.bowtiedphys.io/p/123-health-hacks-to-take-with-you" },
   { title: "High Agency", url: "https://www.highagency.com/" },
   { title: "How to Do What You Love", url: "http://www.paulgraham.com/love.html" },
   { title: "How to Get Rich", url: "https://nav.al/rich" },
