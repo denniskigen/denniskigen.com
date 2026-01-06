@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { ReactNode, useEffect } from "react";
-import { useTheme } from "next-themes";
+import { ReactNode } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Navbar from "./Navbar";
@@ -25,7 +24,6 @@ export default function Container({
   ...customMeta
 }: ContainerProps) {
   const router = useRouter();
-  const { resolvedTheme } = useTheme();
   const meta = {
     title: title ?? "Dennis Kigen",
     description: description ?? "Software Craftsman. Frontend Engineer.",
@@ -34,14 +32,6 @@ export default function Container({
     date,
     ...customMeta,
   };
-
-  useEffect(() => {
-    const themeColor = resolvedTheme === "dark" ? "#0c0a09" : "#ffffff";
-    const metaTag = document.querySelector('meta[name="theme-color"]');
-    if (metaTag) {
-      metaTag.setAttribute("content", themeColor);
-    }
-  }, [resolvedTheme]);
 
   return (
     <div className="mx-auto min-h-screen antialiased bg-white dark:bg-slate-900">

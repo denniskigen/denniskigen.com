@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <div lang="en" className={cn("font-sans", GeistSans.className, bricolage.variable)}>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
         <Component {...pageProps} />
       </ThemeProvider>
     </div>
