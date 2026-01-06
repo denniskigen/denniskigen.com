@@ -112,6 +112,11 @@ function Projects() {
       description: "Core frontend framework for O3.",
     },
     {
+      title: "create-o3-app",
+      url: "https://github.com/openmrs/create-o3-app",
+      description: "CLI tool to scaffold OpenMRS 3 frontend modules with best practices built in.",
+    },
+    {
       title: "O3 Form Builder",
       url: "https://github.com/openmrs/openmrs-esm-form-builder",
       description: "Build, test and publish OpenMRS forms, without the tears.",
