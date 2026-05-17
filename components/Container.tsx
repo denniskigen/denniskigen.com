@@ -49,7 +49,7 @@ export default function Container({
           rel="canonical"
           href={`https://denniskigen.com${router.asPath}`}
         />
-        <link rel="icon" type="image/png" href="/favicon.ico?v=1" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico?v=1" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1" />
         <link
           rel="apple-touch-icon"
@@ -69,7 +69,7 @@ export default function Container({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-TileColor" content="#0f172a" />
         <meta name="theme-color" content="#ffffff" />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Dennis Kigen" />

@@ -71,6 +71,12 @@ const bookmarks: Bookmark[] = [
     note: "The kind of page that makes excuses feel expensive.",
   },
   {
+    title: "Things I Believe",
+    url: "https://leerob.com/beliefs",
+    category: "Thinking",
+    note: "A compact operating manual for shipping, writing clearly, and staying allergic to career ceilings.",
+  },
+  {
     title: "How to Do What You Love",
     url: "http://www.paulgraham.com/love.html",
     category: "Career",
@@ -124,20 +130,21 @@ const categories: Bookmark["category"][] = [
 
 const BookmarkLink = ({ bookmark }: { bookmark: Bookmark }) => {
   return (
-    <div className="border-b border-gray-200 py-4 last:border-0 dark:border-slate-700">
-      <ExternalLink
-        href={bookmark.url}
-        styles="!no-underline text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
-      >
-        <span className="flex items-center gap-1 font-semibold hover:underline underline-offset-4">
+    <ExternalLink href={bookmark.url} styles="block !no-underline group">
+      <div className="border-b border-gray-200 py-4 transition-colors last:border-0 hover:bg-gray-50 dark:border-slate-700 dark:hover:bg-slate-800/70 sm:px-4">
+        <span className="flex items-center gap-1 font-semibold text-blue-700 transition-colors group-hover:text-blue-600 dark:text-blue-300 dark:group-hover:text-blue-400">
           {bookmark.title}
           <ExternalLinkIcon />
         </span>
-      </ExternalLink>
-      <p className="mt-2 text-base leading-relaxed text-slate-700 dark:text-slate-300">
-        {bookmark.note}
-      </p>
-    </div>
+        <p className="mt-2 text-base leading-relaxed text-slate-700 dark:text-slate-300">
+          {bookmark.note}
+        </p>
+        <span className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-blue-700 dark:text-blue-300">
+          Open bookmark
+          <ExternalLinkIcon className="h-3.5 w-3.5 opacity-70 transition-opacity group-hover:opacity-100" />
+        </span>
+      </div>
+    </ExternalLink>
   );
 };
 
