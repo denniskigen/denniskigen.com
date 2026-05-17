@@ -1,6 +1,7 @@
 module.exports = {
   transpilePackages: ["geist"],
   images: {
+    minimumCacheTTL: 60 * 60 * 24 * 30,
     remotePatterns: [
       {
         protocol: "https",

@@ -11,19 +11,14 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://denniskigen.com/bookshelf</loc>
+    <loc>https://denniskigen.com/reading</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://denniskigen.com/blog</loc>
+    <loc>https://denniskigen.com/notes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://denniskigen.com/resume</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://denniskigen.com/uses</loc>
