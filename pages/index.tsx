@@ -30,6 +30,9 @@ const sectionHeadingStyles =
 const focusStyles =
   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-900";
 
+const linkedTitleStyles =
+  "items-center gap-1 text-lg font-bold text-blue-700 transition-colors group-hover:text-blue-600 dark:text-blue-300 dark:group-hover:text-blue-400";
+
 const workItems: WorkItem[] = [
   {
     title: "OpenMRS 3",
@@ -178,7 +181,7 @@ function WorkLink({ work }: { work: WorkItem }) {
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">
         <span>{work.meta}</span>
       </div>
-      <h3 className="mt-3 flex items-center gap-1 text-lg font-bold text-blue-700 transition-colors group-hover:text-blue-600 dark:text-blue-300 dark:group-hover:text-blue-400">
+      <h3 className={`mt-3 flex ${linkedTitleStyles}`}>
         {work.title}
         {work.external && <ExternalLinkIcon />}
       </h3>
@@ -245,14 +248,9 @@ function Latest() {
               {item.kind}
             </span>
             <span>
-              <span className="inline-flex items-baseline gap-1 font-semibold text-blue-700 underline decoration-slate-400 underline-offset-[6px] transition-colors group-hover:text-blue-600 group-hover:decoration-blue-500 dark:text-blue-300 dark:decoration-slate-500 dark:group-hover:text-blue-200 dark:group-hover:decoration-blue-300">
+              <span className={`inline-flex ${linkedTitleStyles}`}>
                 {item.title}
-                <span
-                  aria-hidden="true"
-                  className="text-sm no-underline transition-transform group-hover:translate-x-0.5"
-                >
-                  →
-                </span>
+                <ExternalLinkIcon />
               </span>
               {item.excerpt && (
                 <span className="mt-1 block text-sm leading-6 text-slate-600 dark:text-slate-400">
