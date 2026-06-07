@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useTheme } from "next-themes";
 import { ReactNode } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -24,6 +25,10 @@ export default function Container({
   ...customMeta
 }: ContainerProps) {
   const router = useRouter();
+  const { resolvedTheme } = useTheme();
+  const canonicalPath = router.asPath.split(/[?#]/)[0] || "/";
+  const canonicalUrl = `https://denniskigen.com${canonicalPath}`;
+  const themeColor = resolvedTheme === "dark" ? "#0f172a" : "#ffffff";
   const meta = {
     title: title ?? "Dennis Kigen",
     description:
@@ -41,14 +46,8 @@ export default function Container({
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta
-          property="og:url"
-          content={`https://denniskigen.com${router.asPath}`}
-        />
-        <link
-          rel="canonical"
-          href={`https://denniskigen.com${router.asPath}`}
-        />
+        <meta property="og:url" content={canonicalUrl} />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="icon" type="image/x-icon" href="/favicon.ico?v=1" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1" />
         <link
@@ -70,7 +69,8 @@ export default function Container({
         />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#0f172a" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content={themeColor} />
+        <meta name="color-scheme" content="light dark" />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Dennis Kigen" />
         <meta property="og:description" content={meta.description} />

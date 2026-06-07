@@ -12,6 +12,7 @@ export function useScrollRestoration() {
   const router = useRouter();
   const scrollPositions = useRef<ScrollPosition>({});
   const isRestoring = useRef(false);
+  const shouldRestore = useRef(false);
 
   // Load saved scroll positions on mount
   useEffect(() => {
@@ -27,6 +28,33 @@ export function useScrollRestoration() {
     }
   }, []);
 
+  useEffect(() => {
+    if (
+      typeof window === "undefined" ||
+      !("scrollRestoration" in window.history)
+    ) {
+      return;
+    }
+
+    const originalScrollRestoration = window.history.scrollRestoration;
+    window.history.scrollRestoration = "manual";
+
+    return () => {
+      window.history.scrollRestoration = originalScrollRestoration;
+    };
+  }, []);
+
+  useEffect(() => {
+    router.beforePopState(() => {
+      shouldRestore.current = true;
+      return true;
+    });
+
+    return () => {
+      router.beforePopState(() => true);
+    };
+  }, [router]);
+
   // Save scroll position before navigation
   useEffect(() => {
     const handleRouteChangeStart = (url: string) => {
@@ -37,7 +65,8 @@ export function useScrollRestoration() {
     };
 
     const handleRouteChangeComplete = (url: string) => {
-      if (typeof window !== "undefined") {
+      if (typeof window !== "undefined" && shouldRestore.current) {
+        shouldRestore.current = false;
         isRestoring.current = true;
 
         // Small delay to ensure the page has rendered
@@ -55,6 +84,8 @@ export function useScrollRestoration() {
             isRestoring.current = false;
           }, 200);
         }, 100);
+      } else {
+        shouldRestore.current = false;
       }
     };
 
@@ -123,7 +154,10 @@ export function useScrollRestoration() {
         scrollPositions.current = cleanedPositions;
       }
 
-      localStorage.setItem(SCROLL_POSITION_KEY, JSON.stringify(scrollPositions.current));
+      localStorage.setItem(
+        SCROLL_POSITION_KEY,
+        JSON.stringify(scrollPositions.current),
+      );
     } catch (error) {
       console.warn("Failed to save scroll positions:", error);
     }

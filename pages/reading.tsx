@@ -334,7 +334,7 @@ const BookCard = ({ book }: { book: Book }) => {
 
   return (
     <ExternalLink href={book.url} styles="!no-underline">
-      <div className="group border-b border-gray-200 py-5 transition-colors last:border-0 hover:bg-gray-50 dark:border-slate-700 dark:hover:bg-slate-800/70 sm:px-4">
+      <div className="site-motion-lift group border-b border-gray-200 py-5 last:border-0 hover:bg-gray-50 dark:border-slate-700 dark:hover:bg-slate-800/70 sm:px-4">
         <div className="flex gap-5">
           <div className="flex-shrink-0">
             <div className="relative h-28 w-20 overflow-hidden rounded border border-gray-200 bg-gray-100 shadow-sm dark:border-slate-700 dark:bg-slate-800">

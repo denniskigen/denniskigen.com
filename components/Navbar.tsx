@@ -30,9 +30,15 @@ export default function Navbar() {
       >
         <button
           type="button"
-          aria-label={mounted ? (isDark ? "Switch to light mode" : "Switch to dark mode") : "Toggle theme"}
+          aria-label={
+            mounted
+              ? isDark
+                ? "Switch to light mode"
+                : "Switch to dark mode"
+              : "Toggle theme"
+          }
           aria-pressed={mounted ? isDark : undefined}
-          className="inline-flex justify-center items-center w-9 h-9 rounded-full border shadow-sm transition border-slate-200 bg-white/80 text-slate-700 hover:bg-white active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-200 dark:hover:bg-slate-800 dark:focus-visible:ring-offset-slate-900"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white/80 text-slate-700 shadow-sm transition hover:bg-white active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-200 dark:hover:bg-slate-800 dark:focus-visible:ring-offset-slate-900"
           data-state={mounted ? (isDark ? "dark" : "light") : undefined}
           onClick={() => {
             if (!mounted) return;
@@ -40,11 +46,16 @@ export default function Navbar() {
           }}
         >
           {mounted ? (
-            isDark ? (
-              <SunIcon width={20} height={20} />
-            ) : (
-              <MoonIcon width={20} height={20} />
-            )
+            <span
+              key={isDark ? "dark" : "light"}
+              className="site-theme-icon inline-flex"
+            >
+              {isDark ? (
+                <SunIcon width={20} height={20} />
+              ) : (
+                <MoonIcon width={20} height={20} />
+              )}
+            </span>
           ) : (
             <span className="text-[10px] font-medium">Theme</span>
           )}

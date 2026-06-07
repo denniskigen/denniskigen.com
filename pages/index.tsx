@@ -117,7 +117,7 @@ export default function Home() {
 
 function Hero() {
   return (
-    <section className="w-full">
+    <section className="site-fade-up w-full">
       <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
         <Image
           alt="Dennis Kigen"
@@ -177,7 +177,7 @@ function Currently() {
 
 function WorkLink({ work }: { work: WorkItem }) {
   const content = (
-    <article className="group border border-gray-200 p-5 transition-colors hover:border-gray-300 hover:bg-gray-50 dark:border-slate-700 dark:hover:border-slate-600 dark:hover:bg-slate-800/70">
+    <article className="site-motion-lift group border border-gray-200 p-5 hover:border-gray-300 hover:bg-gray-50 dark:border-slate-700 dark:hover:border-slate-600 dark:hover:bg-slate-800/70">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">
         <span>{work.meta}</span>
       </div>
@@ -203,7 +203,10 @@ function WorkLink({ work }: { work: WorkItem }) {
 
   if (work.external) {
     return (
-      <ExternalLink href={work.url} styles={`block !no-underline ${focusStyles}`}>
+      <ExternalLink
+        href={work.url}
+        styles={`block !no-underline ${focusStyles}`}
+      >
         {content}
       </ExternalLink>
     );
@@ -242,7 +245,7 @@ function Latest() {
           <Link
             key={`${item.kind}-${item.title}`}
             href={item.href}
-            className={`group grid gap-2 py-4 no-underline transition-colors hover:bg-gray-50 dark:hover:bg-slate-800/70 sm:grid-cols-[6rem_1fr] sm:gap-4 sm:px-4 ${focusStyles}`}
+            className={`site-motion-lift group grid gap-2 py-4 no-underline hover:bg-gray-50 dark:hover:bg-slate-800/70 sm:grid-cols-[6rem_1fr] sm:gap-4 sm:px-4 ${focusStyles}`}
           >
             <span className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">
               {item.kind}
@@ -289,8 +292,8 @@ function Connect() {
     <section className="mt-16 w-full border-t border-gray-200 pt-10 dark:border-slate-700">
       <h2 className={sectionHeadingStyles}>Connect</h2>
       <p className="mt-8 max-w-xl text-3xl font-bold leading-tight tracking-tight text-slate-950 dark:text-slate-100">
-        If you&apos;re in Eldoret, let&apos;s go for a walk, coffee, or a
-        casual five-a-side.
+        If you&apos;re in Eldoret, let&apos;s go for a walk, coffee, or a casual
+        five-a-side.
       </p>
       <p className="mt-6">
         Email is best for frontend systems, health software, docs work, or

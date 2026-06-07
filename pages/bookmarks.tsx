@@ -18,7 +18,7 @@ const bookmarks: Bookmark[] = [
   },
   {
     title: "Being Productive",
-    url: "https://www.arcana.computer/industry/being-productive",
+    url: "https://web.archive.org/web/20240623185547/https://arcana.computer/industry/being-productive",
     category: "Work",
     note: "A useful antidote to performative productivity. Output still has to meet reality.",
   },
@@ -131,7 +131,7 @@ const categories: Bookmark["category"][] = [
 const BookmarkLink = ({ bookmark }: { bookmark: Bookmark }) => {
   return (
     <ExternalLink href={bookmark.url} styles="block !no-underline group">
-      <div className="border-b border-gray-200 py-4 transition-colors last:border-0 hover:bg-gray-50 dark:border-slate-700 dark:hover:bg-slate-800/70 sm:px-4">
+      <div className="site-motion-lift border-b border-gray-200 py-4 last:border-0 hover:bg-gray-50 dark:border-slate-700 dark:hover:bg-slate-800/70 sm:px-4">
         <span className="flex items-center gap-1 font-semibold text-blue-700 transition-colors group-hover:text-blue-600 dark:text-blue-300 dark:group-hover:text-blue-400">
           {bookmark.title}
           <ExternalLinkIcon />
