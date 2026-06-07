@@ -247,7 +247,7 @@ function Latest() {
             href={item.href}
             className={`site-motion-lift group grid gap-2 py-4 no-underline hover:bg-gray-50 dark:hover:bg-slate-800/70 sm:grid-cols-[6rem_1fr] sm:gap-4 sm:px-4 ${focusStyles}`}
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">
+            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400 sm:pt-1">
               {item.kind}
             </span>
             <span>
