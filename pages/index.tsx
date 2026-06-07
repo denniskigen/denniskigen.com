@@ -145,7 +145,7 @@ function Hero() {
       <div className="mt-8 flex flex-col gap-1 text-sm font-medium text-slate-600 dark:text-slate-400 sm:flex-row sm:flex-wrap sm:gap-x-4 sm:gap-y-2">
         <span>Based in Eldoret, Kenya</span>
         <span>Open-source contributor</span>
-        <span>React, TypeScript, Vitest, Playwright</span>
+        <span>Frontend systems, OpenMRS, documentation, DX</span>
       </div>
     </section>
   );
