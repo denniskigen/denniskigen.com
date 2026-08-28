@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <div
         data-active={scrolled}
-        className="flex sticky top-0 right-0 left-0 z-10 justify-end items-center px-8 h-16 opacity-95 backdrop-blur-sm"
+        className="flex sticky top-0 right-0 left-0 z-10 justify-end items-center px-8 h-16 bg-white/75 backdrop-blur-md backdrop-saturate-150 dark:bg-slate-900/75"
       >
         <button
           type="button"
